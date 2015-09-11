@@ -1,7 +1,6 @@
-
-
+ \usepackage[spanish]{babel} % espanol, ingles
 % Table of contents formatting
-\renewcommand{\contentsname}{Table of Contents}
+\renewcommand{\contentsname}{Tabla de Contenidos}
 \setcounter{tocdepth}{3}
 
 % Headers and page numbering
@@ -28,6 +27,15 @@
 % % Fonts and typesetting
 % \setmainfont[Scale=1.1]{Helvetica}
 % \setsansfont[Scale=1.1]{Verdana}
+
+% Chapter styling
+\usepackage[grey]{quotchap}
+\makeatletter
+\renewcommand*{\chapnumfont}{%
+  \usefont{T1}{\@defaultcnfont}{b}{n}\fontsize{80}{100}\selectfont% Default: 100/130
+  \color{chaptergrey}%
+}
+\makeatother
 
 % FONTS
 \usepackage{xunicode}

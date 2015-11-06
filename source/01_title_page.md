@@ -23,8 +23,8 @@ and add the centred logo
 
         \vspace{1.0cm}
 
-        \large{ \textbf{ \uppercase{Sistema integrado de asignacion y control de recursos académicos
-        de apoyo a la docencia}}}
+        \large{ \textbf{ \uppercase{Sistema integrado de asignacion y control de salas
+          y laboratorios}}}
 
         \vspace{1.5cm}
 

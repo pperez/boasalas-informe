@@ -50,7 +50,7 @@ El plan de actividades se compone de muchas tareas, las que cuentan con una esti
 
 A groso modo, se contempla el uso de los siguientes componentes:
 
-* Motor de base de datos PostgreSQL
+* Motor de base de datos PostgreSQL.
 * Framework Java Spring y librerías 3rd party asociadas.
 * Servidor con Ubuntu 14.04 server de 64 bits, capaz de ejecutar el motor de base de datos referenciado anteriormente y un contenedor a aplicaciones Java web (De preferencia Tomcat).
 

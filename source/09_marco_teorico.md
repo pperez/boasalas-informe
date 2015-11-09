@@ -13,13 +13,23 @@ Por otra parte, Johnson [@Johnson1997] define frameworks como una técnica de re
 * **Frameworks de integración middleware**: Su tarea es la integración de aplicaciones distribuidas y componentes. Su concepción responde a la necesidad de incrementar la capacidad de los desarrolladores de modularizar, reusar, y extender sus infraestructuras para trabajar sin problemas de forma distribuida.
 * **Frameworks de aplicaciones empresariales**: Este tipo de framework tiene un amplio rango de aplicaciones y cuenta con alto retorno de inversión (ROI) debido a que con ellos es posible desarrollar aplicaciones de alta calidad rápidamente. Sin embargo, el costo de desarrollar este tipo de frameworks es alto, por lo que generalmente se opta por adquirir sistemas envasados y realizar integraciones con frameworks de middleware.
 
-## Clases  de frameworks: White-box y Black-box
+## Clases  de frameworks
 
-En su artículo [@Fayad1997] identifica dos clases de frameworks:
+En su artículo [@Fayad1997] identifica dos clases de frameworks, estas se diferencian por la forma en que se extienden y se reusan sus componentes.
 
 ### Frameworks White-box
 
-Su reuso y extensión es realizado mediante herencia y sobrecarga de métodos _hooks_ predefinidos (Utilizando patrones como el _Template Method_ o similares)
+Su reuso y extensión es realizado mediante herencia y sobrecarga de métodos _hooks_ predefinidos (Utilizando patrones como el _Template Method_ [@Gamma1994] o similares).
+
+Debido a su forma de reuso y extensión (Herencia) es necesario que el desarrollador tenga un íntimo conocimiento de cada pieza interna de estos, produciendo que el software desarrollado tenga un gran acoplamiento a la estructura jerárquica de herencia del framework.
+
+### Frameworks Black-box
+
+La extensión en esta clase de frameworks es realizada definiendo interfaces compatibles con el framework e inyectandolas a este mediante composición.
+
+Por otra parte, el reuso de funcionalidades es realizado mediante la definición de componentes que cumplan con ciertas interfaces e inyectando estos componentes al framework con patrones como _Strategy_ y _Functor_ [@Gamma1994].
+
+Su estructura basada en composición y delegación permite que sea más sencillo su uso y extensión (En comparación a los frameworks White-box). Este beneficio incurre en un elevado costo de desarrollo, debido en que las etapas de diseño deben definirse interfaces y hooks que anticipen un amplio espectro de casos de uso [@Hermann1995].
 
 ## Patrones de diseño
 

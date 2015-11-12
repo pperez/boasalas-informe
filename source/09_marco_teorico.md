@@ -53,4 +53,11 @@ Para terminar, [@Bass2012] menciona que un patrón arquitectónico es una forma 
 
 ### Atributos de calidad
 
-Un atributo de calidad es una característica no funcional de un componente o sistema [@Dobrica2002] y expresan el como una aplicación debe lograr una necesidad dada [@Gorton2006]. El estándar ISO-9126-1 define seis categorias de características
+Un atributo de calidad es una característica no funcional de un componente o sistema [@Dobrica2002] y expresan el como una aplicación debe lograr una necesidad dada [@Gorton2006]. El estándar ISO-9126-1 define seis categorias de características:
+
+* **Eficiencia**: Consiste en un conjunto de atributos que indican el nivel de rendimiento y la cantidad de recursos utilizados. La eficiencia puede ser sub-caracterizada en función del tiempo y recursos utilizados.
+* **Funcionalidad**: Se refiere a al conjunto de funciones que satisfacen las necesidades requeridas. Consiste en la exactitud, interoperabilidad, seguridad y cumplimiento funcional.
+* **Mantenibilidad**: Se refiere al conjunto de atributos que indican el nivel de esfuerzo requerido para realizar cambios. Los puntos escenciales en esta categoria son las capacidades de realizar cambios, análisis, pruebas, estabilidad y cumplimiento de mantenibilidad.
+* **Portabilidad**: Es la capacidad del software de ser transferido de una plataforma a otra. Los atributos relacionados a esta categoria son la _adaptabilidad_, _instalabilidad_, _coexistencia_, _reemplazabilidad_ y cumplimiento de portabilidad.
+* **Confiabilidad**: Se refiere a la capacidad del software para actuar bajo ciertas condiciones en un periodo de tiempo definido. Las subcaracterísticas presentes son _madurez_, _tolerancia a fallos_, _recuperabilidad_ y cumplimiento de confiabilidad.
+* **Usabilidad**: Define la cantidad de esfuerzo necesario para usar el software. Posee 5 subcaracterísticas: _comprensibilidad_, _facilidad de aprendizaje_, _operabilidad_, _atractivo_ y cumplimiento de usabilidad.

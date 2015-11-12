@@ -42,3 +42,15 @@ En [@Gamma1994] se definen los 3 aspectos principales que un patron de diseño d
 * Una descripción abstracta de las relaciones existentes entre objetos o clases, se requiere una abstracción debido a que describe un diseño abstracto y no uno particular.
 * El problema de diseño en el sistema que será atacado por la estructura abstracta, de esta forma se determina en que escenarios es aplicable el patron.
 * Las consecuencias (positivas y negativas) introducidas al aplicar la estructura abstracta a la arquitectura del sistema. Este punto ayuda a determinar si el patron debe aplicarse o no.
+
+## Patrones Arquitectónicos
+
+En [@Buschmann1996] se define un patrón arquitectónico como la expresión de una estructura fundamental para sistemas de software. [@Malinen2013] hace una referencia similar a lo que ocurre con los patrones de diseño, diciendo que "un patrón arquitectónico no es una arquitectura; un software concreto tiene una arquitectura que es una _instancia_ de un patrón arquitectónico" y a su vez, hace enfasis en que una de las características más importantes de los patrones arquitectónicos es proveer atributos de calidad.
+
+El patrón provee un conjunto definido de subsistemas, especificando sus responsabilidades e incluye las reglas y guias para organizar las relaciones entre ellos.
+
+Para terminar, [@Bass2012] menciona que un patrón arquitectónico es una forma de comunicar experiencias de diseño de arquitecturas de software para generar mejores diseños; en otras palabras un patrón arquitectónico promueve la reutilización de diseños.
+
+### Atributos de calidad
+
+Un atributo de calidad es una característica no funcional de un componente o sistema [@Dobrica2002] y expresan el como una aplicación debe lograr una necesidad dada [@Gorton2006]. El estándar ISO-9126-1 define seis categorias de características

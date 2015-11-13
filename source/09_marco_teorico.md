@@ -61,3 +61,17 @@ Un atributo de calidad es una característica no funcional de un componente o si
 * **Portabilidad**: Es la capacidad del software de ser transferido de una plataforma a otra. Los atributos relacionados a esta categoria son la _adaptabilidad_, _instalabilidad_, _coexistencia_, _reemplazabilidad_ y cumplimiento de portabilidad.
 * **Confiabilidad**: Se refiere a la capacidad del software para actuar bajo ciertas condiciones en un periodo de tiempo definido. Las subcaracterísticas presentes son _madurez_, _tolerancia a fallos_, _recuperabilidad_ y cumplimiento de confiabilidad.
 * **Usabilidad**: Define la cantidad de esfuerzo necesario para usar el software. Posee 5 subcaracterísticas: _comprensibilidad_, _facilidad de aprendizaje_, _operabilidad_, _atractivo_ y cumplimiento de usabilidad.
+
+### Patrón MVC
+
+La literatura categoriza de distintas formas a este patrón, sus creadores, [@Burbeck1992], lo presentan como un paradigma, mientras que en [@Gos2004] es tratado como un patrón arquitectónico como tal; debido a que trata un problema de diseño arquitectónico y según la definición de [@Buschmann1996]
+ en el presente trabajo se referirá a él como un patrón.
+
+[@Burbeck1992] define al patrón _MVC_ como aquel en que se separa la entrada de usuario, el modelado del mundo exterior y la representación visual mostrada al usuario son separadas explícitamente y
+manejadas por 3 tipos distintos de objetos, cada uno especializado para su tarea.
+
+La _vista_ maneja la salida gráfica o de texto presentada al usuario. El _controlador_ se encarga de interpretar las órdenes del usuario, controlando los cambios que deban generarse en 
+el modelo y/o la vista. Finalmente, el modelo maneja el comportamiento de los datos del dominio de la aplicación, respondiendo a peticiones de información.
+Esta descripción nos indica que cualquier tipo de objeto puede ser un modelo, incluyendo _Strings_, _Integers_, o incluso objetos complejos instanciados desde clases que utilizan composición.
+
+[@Supaartagorn2011] menciona que usualmente los frameworks para construir aplicaciones web implementan el modelo _MVC_

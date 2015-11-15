@@ -67,7 +67,7 @@ Un atributo de calidad es una característica no funcional de un componente o si
 La literatura categoriza de distintas formas a este patrón, sus creadores, [@Burbeck1992], lo presentan como un paradigma, mientras que en [@Gos2004] es tratado como un patrón arquitectónico como tal; debido a que trata un problema de diseño arquitectónico y según la definición de [@Buschmann1996]
  en el presente trabajo se referirá a él como un patrón.
 
-[@Burbeck1992] define al patrón _MVC_ como aquel en que se separa la entrada de usuario, el modelado del mundo exterior y la representación visual mostrada al usuario son separadas explícitamente y
+[@Burbeck1992] define al patrón _MVC_ como aquel en que la entrada de usuario, el modelado del mundo exterior y la representación visual mostrada al usuario son separadas explícitamente y
 manejadas por 3 tipos distintos de objetos, cada uno especializado para su tarea.
 
 La _vista_ maneja la salida gráfica o de texto presentada al usuario. El _controlador_ se encarga de interpretar las órdenes del usuario, controlando los cambios que deban generarse en 

@@ -64,13 +64,22 @@ Un atributo de calidad es una característica no funcional de un componente o si
 
 ### Patrón MVC
 
-La literatura categoriza de distintas formas a este patrón, sus creadores, [@Burbeck1992], lo presentan como un paradigma, mientras que en [@Gos2004] es tratado como un patrón arquitectónico como tal; debido a que trata un problema de diseño arquitectónico y según la definición de [@Buschmann1996]
- en el presente trabajo se referirá a él como un patrón.
+La literatura categoriza de distintas formas a este patrón, sus creadores, [@Burbeck1992], es presentado como un paradigma, mientras que en [@Gos2004] es tratado como un patrón arquitectónico como tal; debido a que trata un problema de diseño arquitectónico y según la definición de [@Buschmann1996] en el presente trabajo se referirá a él como un _patrón_.
 
-[@Burbeck1992] define al patrón _MVC_ como aquel en que la entrada de usuario, el modelado del mundo exterior y la representación visual mostrada al usuario son separadas explícitamente y
+En [@Buschmann1996] se define al patrón _MVC_ como un patrón arquitectónico que divide una aplicación interactiva en 3 componentes.
+
+* **Modelo**: Contiene la funcionalidad principal y los datos. Es independiente de las representaciones de salida o comportamientos de entrada.
+* **Vistas**: Muestran información al usuario. Una vista obtiene datos desde el modelo y pueden existir múltiples vistas para el mismo modelo.
+* **Controladores**: Manejan la entrada del usuario, interactuando con el modelo y vistas para cumplir su función.
+
+El _contexto_ de aplicación de este patrón es en aplicaciones interactivas con interfaces flexibles humano-computador. El problema que este patrón soluciona se origina en las interfaces de usuarios, estas son especialmente propensas a cambiar en base a peticiones del cliente. Se requiere un alto nivel de flexibilidad para cumplir con estos requerimientos, ¿esta es dificilmente alcanzada si la interfaz de usuario está altamente ligada con la funcionalidad base.
+
+Debido a la naturaleza cambiante del modelo, nace la necesidad de refrescar el contenido de las vistas, por lo que [@Buschmann1996] menciona que es escencial contar con un _mecanismo de prograpación de cambios_, que mantenga un registro de los componentes dependientes al modelo.
+
+<!-- [@Burbeck1992] define al patrón _MVC_ como aquel en que la entrada de usuario, el modelado del mundo exterior y la representación visual mostrada al usuario son separadas explícitamente y
 manejadas por 3 tipos distintos de objetos, cada uno especializado para su tarea.
 
-La _vista_ maneja la salida gráfica o de texto presentada al usuario. El _controlador_ se encarga de interpretar las órdenes del usuario, controlando los cambios que deban generarse en 
+La _vista_ maneja la salida gráfica o de texto presentada al usuario. El _controlador_ se encarga de interpretar las órdenes del usuario, controlando los cambios que deban generarse en
 el modelo y/o la vista. Finalmente, el modelo maneja el comportamiento de los datos del dominio de la aplicación, respondiendo a peticiones de información.
 Esta descripción nos indica que cualquier tipo de objeto puede ser un modelo, incluyendo _Strings_, _Integers_, o incluso objetos complejos instanciados desde clases que utilizan composición.
 
@@ -78,3 +87,4 @@ Esta descripción nos indica que cualquier tipo de objeto puede ser un modelo, i
 de interfaces de usuario sin mayores problemas.
 
 [@Supaartagorn2011] menciona que usualmente los frameworks para construir aplicaciones web implementan el modelo _MVC_.
+-->

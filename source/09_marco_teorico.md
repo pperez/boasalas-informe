@@ -91,7 +91,7 @@ de interfaces de usuario sin mayores problemas.
 
 ## Web Service
 
-[@Austin2004] define un _Web Service_ como un sistema identificado por un _URI_ cuyas interfaces públicas y enlaces son descritos utilizando _XML_ (La descripción es realizada en un Web Service Description Language (_WSDL_). Su definición puede ser descubierta por otros sistemas, estos pueden interactuar con el _Web Service_ de acuerdo al comportamiento descrito en su definición, usando mensajes codificados en _XML_ transmitidos por protocolos de internet.
+[@Austin2004] define un _Web Service_ como un sistema identificado por un _URI_ cuyas interfaces públicas y enlaces son descritos utilizando _XML_ (La descripción es realizada en un _Web Service Description Language_(_WSDL_). Su definición puede ser descubierta por otros sistemas, estos pueden interactuar con el _Web Service_ de acuerdo al comportamiento descrito en su definición, usando mensajes codificados en _XML_ transmitidos por protocolos de internet.
 
 En [@Sleeper2001], el grupo Stencil define _Web Service_ como componentes de software de bajo acoplamiento y reusables, que encapsulan funcionalidad discreta y son distribuidos y accedidos mediante lenguajes de programación a través de protocolos de internet estándares. Otro aporte importante sobre la materia es aportada en este artículo, definiendo las capas de bajo nivel de esta tecnología:
 
@@ -105,3 +105,19 @@ Tambien se definen las capas de mayor nivel:
 * **Universal Description, Discovery, and Integration (UDDI)**: Representa un conjunto de protocolos y un directorio público para la búsqueda y registro en tiempo real de _web services_ y otros procesos de negocios.
 * **Web Services Flow Language**: Describe la lógica de negocios necesaria para integrar múltiples servicios en un proceso de negocios desde principio a fin.
 * **Otras reglas de negocio**: Son aquellas reglas de negocio que deben implementarse para confiar en la automatización de procesos de negocios críticos, entre estas reglas encontramos mecanismos de seguridad y autenticación y calidad de servicio.
+
+## Representational State Transfer (_REST_)
+
+Fielding describe a _REST_ como un estilo arquitectónico para sistemas de hipermedia distribuidos en [@Fielding2000].
+[@Skulason2008] asevera que la arquitectura _REST_ es un tipo de _Web Service_, sin embargo la gran diferencia está en que _REST_ fue diseñado para la web y sus protocolos, limitandose exclusivamente a esas áreas.
+
+Continuando la comparativa, Magnus hace notar que las diferencias entre ambas tecnologias yace en la codificación y forma de enviar los mensajes: En _SOAP_ se busca canalizar toda la información necesaria en una envoltura _SOAP_, por ejemplo, al enviar mensajes _SOAP_ mediante _HTTP_, se envia el mensaje en el body del request _POST_. Mientras que en _REST_, el único método de transporte válido es _HTTP_, por lo que se aprovechan las características de este protocolo.
+De esta forma, la arquitectura _REST_ es centralizada en utilizar URLs para acceder a _entidades_ y _recursos_. Teniendo definido el "donde" se accede a los datos, es necesario definir el "cómo", aquí nuevamente se aprovecha el estándar HTTP, utilizando sus verbos: _GET_, _HEAD_, _PUT_, _DELETE_ y _POST_. El uso de cada verbo puede verse en la siguiente lista:
+
+* **GET**: Muestra el estado actual del recurso.
+* **DELETE**: Elimina el recurso.
+* **PUT**: Reemplaza el contenido de un recurso.
+* **POST**: Crea un nuevo recurso.
+
+_REST_ no restringe el formato de codificación de los mensajes, siendo la única limitación, que estos puedan ser contenidos en el body de un request _HTTP_.
+Las estructuras que se utilizan comunmente incluyen _XML_, _Atom_, _RSS_, _XHTML_, _Schema XML_ y _JSON_ (JavaScript Object Notation, una _serialización_ de objetos Javascript en forma de texto). La última estructura es usada intensivamente en aplicaciones web que utilizan _AJAX_ (Asynchronous Javascript and XML), donde los clientes javascript presentes en navegadores son usados para extraer y actualizar contenido sin refrescar la página.

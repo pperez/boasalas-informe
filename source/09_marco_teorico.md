@@ -88,3 +88,20 @@ de interfaces de usuario sin mayores problemas.
 
 [@Supaartagorn2011] menciona que usualmente los frameworks para construir aplicaciones web implementan el modelo _MVC_.
 -->
+
+## Web Service
+
+[@Austin2004] define un _Web Service_ como un sistema identificado por un _URI_ cuyas interfaces públicas y enlaces son descritos utilizando _XML_ (La descripción es realizada en un Web Service Description Language (_WSDL_). Su definición puede ser descubierta por otros sistemas, estos pueden interactuar con el _Web Service_ de acuerdo al comportamiento descrito en su definición, usando mensajes codificados en _XML_ transmitidos por protocolos de internet.
+
+En [@Sleeper2001], el grupo Stencil define _Web Service_ como componentes de software de bajo acoplamiento y reusables, que encapsulan funcionalidad discreta y son distribuidos y accedidos mediante lenguajes de programación a través de protocolos de internet estándares. Otro aporte importante sobre la materia es aportada en este artículo, definiendo las capas de bajo nivel de esta tecnología:
+
+* **Protocolos de transporte comunes en internet**: Aunque los _web services_ no se asocian en particular a algún protocolo de transporte, se intenta que esta elección garantize el alcance y soporte universal. Generalmente, los _web services_ utilizan el protocolo _HTTP_, utilizado principalmente por servidores web y navegadores.
+* **Extensible Markup Language (XML)**: Es un formato ampliamente aceptado para el intercambio de datos y su semántica de correspondencia.
+* **Simple Object Access Protocol (SOAP)**: Es un protocolo de mensajeria y de comunicación tipo _RPC_ (Remote Procedure Call o llamada de procedimiento remoto) entre aplicaciones. Se basa en _XML_ y usa protocolos de transporte de internet como el _HTTP_ para mover datos.
+
+Tambien se definen las capas de mayor nivel:
+
+* **Web Services Description Language (WSDL)**: Es un descriptor basado en _XML_ sobre como conectarse a un _web service_ en particular.
+* **Universal Description, Discovery, and Integration (UDDI)**: Representa un conjunto de protocolos y un directorio público para la búsqueda y registro en tiempo real de _web services_ y otros procesos de negocios.
+* **Web Services Flow Language**: Describe la lógica de negocios necesaria para integrar múltiples servicios en un proceso de negocios desde principio a fin.
+* **Otras reglas de negocio**: Son aquellas reglas de negocio que deben implementarse para confiar en la automatización de procesos de negocios críticos, entre estas reglas encontramos mecanismos de seguridad y autenticación y calidad de servicio.

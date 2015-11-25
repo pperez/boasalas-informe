@@ -121,3 +121,23 @@ De esta forma, la arquitectura _REST_ es centralizada en utilizar URLs para acce
 
 _REST_ no restringe el formato de codificación de los mensajes, siendo la única limitación, que estos puedan ser contenidos en el body de un request _HTTP_.
 Las estructuras que se utilizan comunmente incluyen _XML_, _Atom_, _RSS_, _XHTML_, _Schema XML_ y _JSON_ (JavaScript Object Notation, una _serialización_ de objetos Javascript en forma de texto). La última estructura es usada intensivamente en aplicaciones web que utilizan _AJAX_ (Asynchronous Javascript and XML), donde los clientes javascript presentes en navegadores son usados para extraer y actualizar contenido sin refrescar la página.
+
+## Base de datos
+
+Antes de poder definir una base de datos como tal, en [@Ceruti1999] se presenta una definición de _dato_, esta palabra es un sustantivo que se refiere a cosas sabidas o asumidas; hechos o figuras desde las cuales se pueden construir conclusiones, generando así _información.
+Esta definición es complementada por el Departamento de defensa de los Estados Unidos [@???], diciendo que un dato es una representación de hechos, conceptos o instrucciones de una forma normalizada que es adecuada para la comunicación, interpretación o procesado, ya sea por humanos o de forma automática.
+
+A partir de la definición de dato, es posible construir un conjunto de datos, a lo que Ceruti caracteriza como una pila de datos que estan relacionados de alguna forma.
+
+<!-- TODO: Terminar esto, suena pajoso -->
+
+## Programación orientada a objetos
+
+<!-- Filler -->
+
+## Java Persistence API
+
+[@Boeck2011] dice que la función de la _Java Persistence API_ o _JPA_, es especificar un modelo de persistencia estándar y sencillo de usar en plataformas Java SE y Java EE.
+Su principal característica es la especificación del _object relational mapping_ (Mapeo objeto-relacional) directamente en los objetos de persistencia, conocidos en este contexto como entidades.
+En [@ONeil2008] vemos que un _mapeo objeto-relacional_ (_ORM_), provee un mecanismo para que sistemas orientados a objetos mantengan sus datos de forma segura en una base de datos, con manejo transaccional y controlados mediante objetos cuando sea necesario.
+De esta forma, el _ORM_ se encarga de manejar en tiempo de ejecución las relaciones entre las entidades, entregando grafos de objetos que representan relaciones complejas entre objetos; tambien se encarga de seguir el ciclo de vida de los objetos, llevando la cuenta de las acciones aplicadas sobre ellos y ejecutando las queries SQL necesarias para persistir estos hechos en la base de datos.

@@ -6,19 +6,18 @@ Un framework es una aplicación reusable y "semi-completa" que puede ser especia
 Los beneficios principales del uso de frameworks son la modularidad, reusabilidad, extensibilidad e inversión de control que proveen a los desarrolladores.
 
 Por otra parte, Johnson [@Johnson1997] define frameworks como una técnica de reuso orientada a objetos, la cual difiere de la visión original basada en componentes del reuso del software.
-Se puede pensar en un framework como un componente en el contexto de que una aplicación puede utilizar varios frameworks, sin embargo la diferencia principal yace en el automento del nivel de personalización en comparación a la mayoria de los componentes, además de que los frameworks poseen interfaces de mayor complejitud.
+Se puede pensar en un framework como un componente en el contexto de que una aplicación puede utilizar varios frameworks, sin embargo la diferencia principal yace en el aumento del nivel de personalización en comparación a la mayoria de los componentes, además de que los frameworks poseen interfaces de mayor complejitud.
 
 [@Fayad1997] clasifica los frameworks en 3 tipos:
 
 * **Frameworks de infraestructura de sistemas**: Su tarea es simplificar el desarrollo de infraestructuras portables y eficientes, tales como sistemas operativos, frameworks de comunicación, herramientas de procesado de lenguaje y frameworks de interfaces de usuarios.
-* **Frameworks de integración middleware**: Su tarea es la integración de aplicaciones distribuidas y componentes.
+* **Frameworks de integración middleware**: Su tarea es la integración de componentes entre aplicaciones distribuidas.
 Su concepción responde a la necesidad de incrementar la capacidad de los desarrolladores de modularizar, reusar, y extender sus infraestructuras para trabajar sin problemas de forma distribuida.
-* **Frameworks de aplicaciones empresariales**: Este tipo de framework tiene un amplio rango de aplicaciones y cuenta con alto retorno de inversión (ROI) debido a que con ellos es posible desarrollar aplicaciones de alta calidad rápidamente.
-Sin embargo, el costo de desarrollar este tipo de frameworks es alto, por lo que generalmente se opta por adquirir sistemas envasados y realizar integraciones con frameworks de middleware.
+* **Frameworks de aplicaciones empresariales**: Este tipo de framework tiene un amplio rango de aplicaciones y cuenta con alto retorno de inversión (ROI) debido a que con ellos es posible desarrollar aplicaciones de alta calidad rápidamente; sin embargo, el costo de desarrollar este tipo de frameworks es alto, por lo que generalmente se opta por adquirir sistemas envasados y realizar integraciones con frameworks de middleware.
 
 ## Clases  de frameworks
 
-En su artículo [@Fayad1997] identifica dos clases de frameworks, estas se diferencian por la forma en que se extienden y se reusan sus componentes.
+En su artículo [@Fayad1997] identifica dos clases de frameworks, estas se diferencian por la forma en que sus componentes son reutilizados y extendidos (Para añadir funcionalidad no ofrecida).
 
 ### Frameworks White-box
 
@@ -28,7 +27,7 @@ Debido a su forma de reuso y extensión (Herencia) es necesario que el desarroll
 
 ### Frameworks Black-box
 
-La extensión en esta clase de frameworks es realizada definiendo interfaces compatibles con el framework e inyectandolas a este mediante composición.
+La extensión en esta clase de frameworks es realizada definiendo interfaces compatibles con el framework e inyectándolas a este mediante composición.
 
 Por otra parte, el reuso de funcionalidades es realizado mediante la definición de componentes que cumplan con ciertas interfaces e inyectando estos componentes al framework con patrones como _Strategy_ y _Functor_ [@Gamma1994].
 
@@ -36,26 +35,27 @@ Su estructura basada en composición y delegación permite que sea más sencillo
 
 ## Patrones de diseño
 
-En las etapas de diseño, el diseñador es encasillado a las limitaciones introducidas por las decisiones de diseño implementadas en los componentes que debe reutilizar, considerando entre estas algoritmos particulares y las interfaces propias de los componentes/objetos.
-De esta forma Sommerville [@Sommerville2005] introduce el tópico de los patrones de diseño.
+Una de las grandes problemáticas que enfrentan los diseñadores en la etapa de diseño de un sistema, son las limitaciones generadas por las decisiones de diseño tomadas en componentes que se desean reutilizar, entre estas decisiones encontramos algoritmos e interfaces propias de componentes u objetos.
 
-Un patrón de diseño es la descripción de un problema y la esencia de su solución, de forma que esta pueda ser reutilizada en distintas situaciones [@Sommerville2005].
-Se destaca la naturaleza abstracta del patrón, mediante el no detallar la especificación, pero que, sin embargo es la descripción del conocimiento y experiencia acumulados.
+Esta problemática es compartida por diseñadores, generalmente con distintos contextos y componentes, Sommerville [@Sommerville2005] introduce el tópico de los _patrones de diseño_ como una solución general a problemas encontrados en la etapa de diseño.
 
-En [@Gamma1994] se definen los 3 aspectos principales que un patron de diseño debe cumplir:
+Un _patrón de diseño_ es la descripción de un problema y la esencia de su solución, de forma que esta pueda ser reutilizada en distintas situaciones [@Sommerville2005].
+Se destaca la naturaleza abstracta del patrón, al no entrar en los detalles de su especificación;, sin embargo un patrón es una expresión de conocimiento y experiencia acumulada.
 
-* Una descripción abstracta de las relaciones existentes entre objetos o clases, se requiere una abstracción debido a que describe un diseño abstracto y no uno particular.
-* El problema de diseño en el sistema que será atacado por la estructura abstracta, de esta forma se determina en que escenarios es aplicable el patron.
-* Las consecuencias (positivas y negativas) introducidas al aplicar la estructura abstracta a la arquitectura del sistema. Este punto ayuda a determinar si el patron debe aplicarse o no.
+En [@Gamma1994] se definen los 3 aspectos principales que un patrón de diseño debe incluir:
+
+* Una descripción abstracta de las relaciones existentes entre objetos o clases, la abstracción es requrida debido a que describe un diseño general y no uno particular.
+* El problema de diseño que será abordado por la estructura abstracta, de esta forma se determina en que escenarios es aplicable el patrón.
+* Las consecuencias (positivas y negativas) introducidas al aplicar la estructura abstracta a la arquitectura del sistema. Este punto ayuda a determinar si el patrón debe aplicarse o no.
 
 ## Patrones Arquitectónicos
 
-En [@Buschmann1996] se define un patrón arquitectónico como la expresión de una estructura fundamental para sistemas de software.
-[@Malinen2013] hace una referencia similar a lo que ocurre con los patrones de diseño, diciendo que "un patrón arquitectónico no es una arquitectura; un software concreto tiene una arquitectura que es una _instancia_ de un patrón arquitectónico" y a su vez, hace enfasis en que una de las características más importantes de los patrones arquitectónicos es proveer atributos de calidad.
+En [@Buschmann1996] los autores señalan que un _patrón arquitectónico_ es la expresión de una estructura fundamental para sistemas de software.
+[@Malinen2013] hace una referencia similar a lo que ocurre con los patrones de diseño, diciendo que "un patrón arquitectónico no es una arquitectura; un software concreto tiene una arquitectura que es una _instancia_ de un patrón arquitectónico" y a su vez, hace énfasis en que una de las características más importantes de los patrones arquitectónicos es proveer atributos de calidad.
 
-El patrón provee un conjunto definido de subsistemas, especificando sus responsabilidades e incluye las reglas y guias para organizar las relaciones entre ellos.
+El patrón provee un conjunto definido de subsistemas, especificando sus responsabilidades e incluye las reglas y guías para organizar las relaciones entre ellos.
 
-Para terminar, [@Bass2012] menciona que un patrón arquitectónico es una forma de comunicar experiencias de diseño de arquitecturas de software para generar mejores diseños; en otras palabras un patrón arquitectónico promueve la reutilización de diseños.
+Para terminar, los autores [@Bass2012] señalan que un patrón arquitectónico es una forma de comunicar experiencias de diseño de arquitecturas de software produciendo así softwares de mejor calidad; en otras palabras un patrón arquitectónico promueve la reutilización de diseños.
 
 ### Atributos de calidad
 
@@ -64,12 +64,12 @@ El estándar ISO-9126-1 define seis categorias de características:
 
 * **Eficiencia**: Consiste en un conjunto de atributos que indican el nivel de rendimiento y la cantidad de recursos utilizados.
 La eficiencia puede ser sub-caracterizada en función del tiempo y recursos utilizados.
-* **Funcionalidad**: Se refiere a al conjunto de funciones que satisfacen las necesidades requeridas.
+* **Funcionalidad**: Se refiere al conjunto de funciones que satisfacen las necesidades requeridas.
 Consiste en la exactitud, interoperabilidad, seguridad y cumplimiento funcional.
 * **Mantenibilidad**: Se refiere al conjunto de atributos que indican el nivel de esfuerzo requerido para realizar cambios.
-Los puntos escenciales en esta categoria son las capacidades de realizar cambios, análisis, pruebas, estabilidad y cumplimiento de mantenibilidad.
+Los puntos esenciales en esta categoría son las capacidades de realizar cambios, análisis, pruebas, estabilidad y cumplimiento de mantenibilidad.
 * **Portabilidad**: Es la capacidad del software de ser transferido de una plataforma a otra.
-Los atributos relacionados a esta categoria son la _adaptabilidad_, _instalabilidad_, _coexistencia_, _reemplazabilidad_ y cumplimiento de portabilidad.
+Los atributos relacionados a esta categoría son la _adaptabilidad_, _instalabilidad_, _coexistencia_, _reemplazabilidad_ y cumplimiento de portabilidad.
 * **Confiabilidad**: Se refiere a la capacidad del software para actuar bajo ciertas condiciones en un periodo de tiempo definido.
 Las subcaracterísticas presentes son _madurez_, _tolerancia a fallos_, _recuperabilidad_ y cumplimiento de confiabilidad.
 * **Usabilidad**: Define la cantidad de esfuerzo necesario para usar el software.
@@ -77,7 +77,7 @@ Posee 5 subcaracterísticas: _comprensibilidad_, _facilidad de aprendizaje_, _op
 
 ### Patrón MVC
 
-La literatura categoriza de distintas formas a este patrón, sus creadores, [@Burbeck1992], es presentado como un paradigma, mientras que en [@Gos2004] es tratado como un patrón arquitectónico como tal; debido a que trata un problema de diseño arquitectónico y según la definición de [@Buschmann1996] en el presente trabajo se referirá a él como un _patrón_.
+La literatura categoriza de distintas formas a este patrón, sus creadores, [@Burbeck1992], lo presentan como un paradigma, mientras que en [@Gos2004] es tratado como un patrón arquitectónico como tal; debido a que aborda un problema de diseño arquitectónico y según la definición de [@Buschmann1996] en el presente trabajo se referirá a él como un _patrón_.
 
 En [@Buschmann1996] se define al patrón _MVC_ como un patrón arquitectónico que divide una aplicación interactiva en 3 componentes.
 
@@ -87,9 +87,9 @@ Es independiente de las representaciones de salida o comportamientos de entrada.
 Una vista obtiene datos desde el modelo y pueden existir múltiples vistas para el mismo modelo.
 * **Controladores**: Manejan la entrada del usuario, interactuando con el modelo y vistas para cumplir su función.
 
-El _contexto_ de aplicación de este patrón es en aplicaciones interactivas con interfaces flexibles humano-computador.
+El _contexto_ de uso de este patrón es en aplicaciones interactivas con interfaces flexibles humano-computador.
 El problema que este patrón soluciona se origina en las interfaces de usuarios, estas son especialmente propensas a cambiar en base a peticiones del cliente.
-Se requiere un alto nivel de flexibilidad para cumplir con estos requerimientos, ¿esta es dificilmente alcanzada si la interfaz de usuario está altamente ligada con la funcionalidad base.
+Se requiere un alto nivel de flexibilidad para cumplir con estos requerimientos, esta es difícilmente alcanzada si la interfaz de usuario está altamente ligada con la funcionalidad base.
 
 Debido a la naturaleza cambiante del modelo, nace la necesidad de refrescar el contenido de las vistas, por lo que [@Buschmann1996] menciona que es escencial contar con un _mecanismo de prograpación de cambios_, que mantenga un registro de los componentes dependientes al modelo.
 

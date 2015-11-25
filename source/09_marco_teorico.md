@@ -6,7 +6,7 @@ Un framework es una aplicación reusable y "semi-completa" que puede ser especia
 Los beneficios principales del uso de frameworks son la modularidad, reusabilidad, extensibilidad e inversión de control que proveen a los desarrolladores.
 
 Por otra parte, Johnson [@Johnson1997] define frameworks como una técnica de reuso orientada a objetos, la cual difiere de la visión original basada en componentes del reuso del software.
-Se puede pensar en un framework como un componente en el contexto de que una aplicación puede utilizar varios frameworks, sin embargo la diferencia principal yace en el aumento del nivel de personalización en comparación a la mayoria de los componentes, además de que los frameworks poseen interfaces de mayor complejitud.
+Se puede pensar en un framework como un componente en el contexto de que una aplicación puede utilizar varios frameworks, sin embargo la diferencia principal yace en el aumento del nivel de personalización en comparación a la mayoría de los componentes, además de que los frameworks poseen interfaces de mayor complejitud.
 
 [@Fayad1997] clasifica los frameworks en 3 tipos:
 
@@ -44,7 +44,7 @@ Se destaca la naturaleza abstracta del patrón, al no entrar en los detalles de 
 
 En [@Gamma1994] se definen los 3 aspectos principales que un patrón de diseño debe incluir:
 
-* Una descripción abstracta de las relaciones existentes entre objetos o clases, la abstracción es requrida debido a que describe un diseño general y no uno particular.
+* Una descripción abstracta de las relaciones existentes entre objetos o clases, la abstracción es requerida debido a que describe un diseño general y no uno particular.
 * El problema de diseño que será abordado por la estructura abstracta, de esta forma se determina en que escenarios es aplicable el patrón.
 * Las consecuencias (positivas y negativas) introducidas al aplicar la estructura abstracta a la arquitectura del sistema. Este punto ayuda a determinar si el patrón debe aplicarse o no.
 
@@ -60,7 +60,7 @@ Para terminar, los autores [@Bass2012] señalan que un patrón arquitectónico e
 ### Atributos de calidad
 
 Un atributo de calidad es una característica no funcional de un componente o sistema [@Dobrica2002] y expresan el como una aplicación debe lograr una necesidad dada [@Gorton2006].
-El estándar ISO-9126-1 define seis categorias de características:
+El estándar ISO-9126-1 define seis categorías de características:
 
 * **Eficiencia**: Consiste en un conjunto de atributos que indican el nivel de rendimiento y la cantidad de recursos utilizados.
 La eficiencia puede ser sub-caracterizada en función del tiempo y recursos utilizados.
@@ -91,7 +91,7 @@ El _contexto_ de uso de este patrón es en aplicaciones interactivas con interfa
 El problema que este patrón soluciona se origina en las interfaces de usuarios, estas son especialmente propensas a cambiar en base a peticiones del cliente.
 Se requiere un alto nivel de flexibilidad para cumplir con estos requerimientos, esta es difícilmente alcanzada si la interfaz de usuario está altamente ligada con la funcionalidad base.
 
-Debido a la naturaleza cambiante del modelo, nace la necesidad de refrescar el contenido de las vistas, por lo que [@Buschmann1996] menciona que es escencial contar con un _mecanismo de prograpación de cambios_, que mantenga un registro de los componentes dependientes al modelo.
+Debido a la naturaleza cambiante del modelo, nace la necesidad de refrescar el contenido de las vistas, por lo que [@Buschmann1996] menciona que es esencial contar con un _mecanismo de prograpación de cambios_, que mantenga un registro de los componentes dependientes al modelo.
 
 <!-- [@Burbeck1992] define al patrón _MVC_ como aquel en que la entrada de usuario, el modelado del mundo exterior y la representación visual mostrada al usuario son separadas explícitamente y
 manejadas por 3 tipos distintos de objetos, cada uno especializado para su tarea.
@@ -114,13 +114,13 @@ Su definición puede ser descubierta por otros sistemas, estos pueden interactua
 En [@Sleeper2001], el grupo Stencil define _Web Service_ como componentes de software de bajo acoplamiento y reusables, que encapsulan funcionalidad discreta y son distribuidos y accedidos mediante lenguajes de programación a través de protocolos de internet estándares.
 Otro aporte importante sobre la materia es aportada en este artículo, definiendo las capas de bajo nivel de esta tecnología:
 
-* **Protocolos de transporte comunes en internet**: Aunque los _web services_ no se asocian en particular a algún protocolo de transporte, se intenta que esta elección garantize el alcance y soporte universal.
+* **Protocolos de transporte comunes en internet**: Aunque los _web services_ no se asocian en particular a algún protocolo de transporte, se intenta que esta elección garantice el alcance y soporte universal.
 Generalmente, los _web services_ utilizan el protocolo _HTTP_, utilizado principalmente por servidores web y navegadores.
 * **Extensible Markup Language (XML)**: Es un formato ampliamente aceptado para el intercambio de datos y su semántica de correspondencia.
-* **Simple Object Access Protocol (SOAP)**: Es un protocolo de mensajeria y de comunicación tipo _RPC_ (Remote Procedure Call o llamada de procedimiento remoto) entre aplicaciones.
+* **Simple Object Access Protocol (SOAP)**: Es un protocolo de mensajería y de comunicación tipo _RPC_ (Remote Procedure Call o llamada de procedimiento remoto) entre aplicaciones.
 Se basa en _XML_ y usa protocolos de transporte de internet como el _HTTP_ para mover datos.
 
-Tambien se definen las capas de mayor nivel:
+También se definen las capas de mayor nivel:
 
 * **Web Services Description Language (WSDL)**: Es un descriptor basado en _XML_ sobre como conectarse a un _web service_ en particular.
 * **Universal Description, Discovery, and Integration (UDDI)**: Representa un conjunto de protocolos y un directorio público para la búsqueda y registro en tiempo real de _web services_ y otros procesos de negocios.
@@ -130,9 +130,9 @@ Tambien se definen las capas de mayor nivel:
 ## Representational State Transfer (_REST_)
 
 Fielding describe a _REST_ como un estilo arquitectónico para sistemas de hipermedia distribuidos en [@Fielding2000].
-[@Skulason2008] asevera que la arquitectura _REST_ es un tipo de _Web Service_, sin embargo la gran diferencia está en que _REST_ fue diseñado para la web y sus protocolos, limitandose exclusivamente a esas áreas.
+[@Skulason2008] asevera que la arquitectura _REST_ es un tipo de _Web Service_, sin embargo la gran diferencia está en que _REST_ fue diseñado para la web y sus protocolos, limitándose exclusivamente a esas áreas.
 
-Continuando la comparativa, Magnus hace notar que las diferencias entre ambas tecnologias yace en la codificación y forma de enviar los mensajes: En _SOAP_ se busca canalizar toda la información necesaria en una envoltura _SOAP_, por ejemplo, al enviar mensajes _SOAP_ mediante _HTTP_, se envia el mensaje en el body del request _POST_.
+Continuando la comparativa, Magnus hace notar que las diferencias entre ambas tecnologías yace en la codificación y forma de enviar los mensajes: En _SOAP_ se busca canalizar toda la información necesaria en una envoltura _SOAP_, por ejemplo, al enviar mensajes _SOAP_ mediante _HTTP_, se envia el mensaje en el body del request _POST_.
 Mientras que en _REST_, el único método de transporte válido es _HTTP_, por lo que se aprovechan las características de este protocolo.
 De esta forma, la arquitectura _REST_ es centralizada en utilizar URLs para acceder a _entidades_ y _recursos_.
 Teniendo definido el "donde" se accede a los datos, es necesario definir el "cómo", aquí nuevamente se aprovecha el estándar HTTP, utilizando sus verbos: _GET_, _HEAD_, _PUT_, _DELETE_ y _POST_.
@@ -144,7 +144,7 @@ El uso de cada verbo puede verse en la siguiente lista:
 * **POST**: Crea un nuevo recurso.
 
 _REST_ no restringe el formato de codificación de los mensajes, siendo la única limitación, que estos puedan ser contenidos en el body de un request _HTTP_.
-Las estructuras que se utilizan comunmente incluyen _XML_, _Atom_, _RSS_, _XHTML_, _Schema XML_ y _JSON_ (JavaScript Object Notation, una _serialización_ de objetos Javascript en forma de texto).
+Las estructuras que se utilizan comúnmente incluyen _XML_, _Atom_, _RSS_, _XHTML_, _Schema XML_ y _JSON_ (JavaScript Object Notation, una _serialización_ de objetos Javascript en forma de texto).
 La última estructura es usada intensivamente en aplicaciones web que utilizan _AJAX_ (Asynchronous Javascript and XML), donde los clientes javascript presentes en navegadores son usados para extraer y actualizar contenido sin refrescar la página.
 
 ## Base de datos
@@ -152,7 +152,7 @@ La última estructura es usada intensivamente en aplicaciones web que utilizan _
 Antes de poder definir una base de datos como tal, en [@Ceruti1999] se presenta una definición de _dato_, esta palabra es un sustantivo que se refiere a cosas sabidas o asumidas; hechos o figuras desde las cuales se pueden construir conclusiones, generando así _información_.
 Esta definición es complementada por el Departamento de defensa de los Estados Unidos [@???], diciendo que un dato es una representación de hechos, conceptos o instrucciones de una forma normalizada que es adecuada para la comunicación, interpretación o procesado, ya sea por humanos o de forma automática.
 
-A partir de la definición de dato, es posible construir un conjunto de datos, a lo que Ceruti caracteriza como una pila de datos que estan relacionados de alguna forma.
+A partir de la definición de dato, es posible construir un conjunto de datos, a lo que Ceruti caracteriza como una pila de datos que están relacionados de alguna forma.
 
 <!-- TODO: Terminar esto, suena pajoso -->
 
@@ -165,13 +165,13 @@ A partir de la definición de dato, es posible construir un conjunto de datos, a
 [@Boeck2011] dice que la función de la _Java Persistence API_ o _JPA_, es especificar un modelo de persistencia estándar y sencillo de usar en plataformas Java SE y Java EE.
 Su principal característica es la especificación del _object relational mapping_ (Mapeo objeto-relacional) directamente en los objetos de persistencia, conocidos en este contexto como entidades.
 En [@ONeil2008] vemos que un _mapeo objeto-relacional_ (_ORM_), provee un mecanismo para que sistemas orientados a objetos mantengan sus datos de forma segura en una base de datos, con manejo transaccional y controlados mediante objetos cuando sea necesario.
-De esta forma, el _ORM_ se encarga de manejar en tiempo de ejecución las relaciones entre las entidades, entregando grafos de objetos que representan relaciones complejas entre objetos; tambien se encarga de seguir el ciclo de vida de los objetos, llevando la cuenta de las acciones aplicadas sobre ellos y ejecutando las queries SQL necesarias para persistir estos hechos en la base de datos.
+De esta forma, el _ORM_ se encarga de manejar en tiempo de ejecución las relaciones entre las entidades, entregando grafos de objetos que representan relaciones complejas entre objetos; también se encarga de seguir el ciclo de vida de los objetos, llevando la cuenta de las acciones aplicadas sobre ellos y ejecutando las queries SQL necesarias para persistir estos hechos en la base de datos.
 
 
 ## Bean Validation
 
 En [@Bernard2009] se dice que la validación de datos es una tarea que ocurre en la aplicación, desde la capa de presentación a la capa de persistencia.
 Muchas veces la lógica desarrollada es implementada en cada capa, lo que es susceptible a fallos y una pérdida de tiempo.
-Para solucionar el problema de la duplicación de código de validación, los desarrolladores suelen implementar esta lógica en el modelo del dominio, sin embargo esto provoca que las clases del dominio esten abarrotadas con código que a fin de cuentas es información de la propia clase.
+Para solucionar el problema de la duplicación de código de validación, los desarrolladores suelen implementar esta lógica en el modelo del dominio, sin embargo esto provoca que las clases del dominio estén abarrotadas con código que a fin de cuentas es información de la propia clase.
 
 La _JSR_ o _Java Specification Request_ expuesta, define un modelo de metados y un _API_ para validación, pudiendo este ser implementado en forma de _anotaciones_ o descripciones en _XML_.

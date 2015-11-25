@@ -1,7 +1,7 @@
 # Resumen {.unnumbered}
 
 Este proyecto presenta el diseño y construcción de un sistema capaz de asignar el uso de salas de clases y laboratorios, que modele los pasos del proceso de asignación de estos recursos, permitiendo a su vez formalizar este proceso a la comunidad.
-La propuesta de valor en este proyecto, es proveer desde su concepción, integración con otras plataformas mediante la exposición de un servicio web, dejando a la imaginación de los integrantes de la comunidad usos no pensados en esta propuesta, que permitan agilizar la gestión institucional o apoyar la toma de decisiones.
+La propuesta de valor en este proyecto, es proveer desde su concepción, integración con otras plataformas mediante la exposición de un servicio web, dejando a la imaginación de los integrantes de la comunidad usos no pensados en esta propuesta, que permitan agilizar la gestión institucional apoyando la toma de decisiones.
 
 
 # Abstract {.unnumbered}

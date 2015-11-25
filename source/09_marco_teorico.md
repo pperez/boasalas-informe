@@ -166,3 +166,12 @@ A partir de la definición de dato, es posible construir un conjunto de datos, a
 Su principal característica es la especificación del _object relational mapping_ (Mapeo objeto-relacional) directamente en los objetos de persistencia, conocidos en este contexto como entidades.
 En [@ONeil2008] vemos que un _mapeo objeto-relacional_ (_ORM_), provee un mecanismo para que sistemas orientados a objetos mantengan sus datos de forma segura en una base de datos, con manejo transaccional y controlados mediante objetos cuando sea necesario.
 De esta forma, el _ORM_ se encarga de manejar en tiempo de ejecución las relaciones entre las entidades, entregando grafos de objetos que representan relaciones complejas entre objetos; tambien se encarga de seguir el ciclo de vida de los objetos, llevando la cuenta de las acciones aplicadas sobre ellos y ejecutando las queries SQL necesarias para persistir estos hechos en la base de datos.
+
+
+## Bean Validation
+
+En [@Bernard2009] se dice que la validación de datos es una tarea que ocurre en la aplicación, desde la capa de presentación a la capa de persistencia.
+Muchas veces la lógica desarrollada es implementada en cada capa, lo que es susceptible a fallos y una pérdida de tiempo.
+Para solucionar el problema de la duplicación de código de validación, los desarrolladores suelen implementar esta lógica en el modelo del dominio, sin embargo esto provoca que las clases del dominio esten abarrotadas con código que a fin de cuentas es información de la propia clase.
+
+La _JSR_ o _Java Specification Request_ expuesta, define un modelo de metados y un _API_ para validación, pudiendo este ser implementado en forma de _anotaciones_ o descripciones en _XML_.

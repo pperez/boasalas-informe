@@ -5,13 +5,16 @@
 Un framework es una aplicación reusable y "semi-completa" que puede ser especializada para producir aplicaciones personalizadas. [@Fayad1997]. Un framework permite disminuir los costos y esfuerzos producidos por el continuo redescubrimiento y reinvención de conceptos base y componentes transversales en la industria del software.
 Los beneficios principales del uso de frameworks son la modularidad, reusabilidad, extensibilidad e inversión de control que proveen a los desarrolladores.
 
-Por otra parte, Johnson [@Johnson1997] define frameworks como una técnica de reuso orientada a objetos, la cual difiere de la visión original basada en componentes del reuso del software. Se puede pensar en un framework como un componente en el contexto de que una aplicación puede utilizar varios frameworks, sin embargo la diferencia principal yace en el automento del nivel de personalización en comparación a la mayoria de los componentes, además de que los frameworks poseen interfaces de mayor complejitud.
+Por otra parte, Johnson [@Johnson1997] define frameworks como una técnica de reuso orientada a objetos, la cual difiere de la visión original basada en componentes del reuso del software.
+Se puede pensar en un framework como un componente en el contexto de que una aplicación puede utilizar varios frameworks, sin embargo la diferencia principal yace en el automento del nivel de personalización en comparación a la mayoria de los componentes, además de que los frameworks poseen interfaces de mayor complejitud.
 
 [@Fayad1997] clasifica los frameworks en 3 tipos:
 
 * **Frameworks de infraestructura de sistemas**: Su tarea es simplificar el desarrollo de infraestructuras portables y eficientes, tales como sistemas operativos, frameworks de comunicación, herramientas de procesado de lenguaje y frameworks de interfaces de usuarios.
-* **Frameworks de integración middleware**: Su tarea es la integración de aplicaciones distribuidas y componentes. Su concepción responde a la necesidad de incrementar la capacidad de los desarrolladores de modularizar, reusar, y extender sus infraestructuras para trabajar sin problemas de forma distribuida.
-* **Frameworks de aplicaciones empresariales**: Este tipo de framework tiene un amplio rango de aplicaciones y cuenta con alto retorno de inversión (ROI) debido a que con ellos es posible desarrollar aplicaciones de alta calidad rápidamente. Sin embargo, el costo de desarrollar este tipo de frameworks es alto, por lo que generalmente se opta por adquirir sistemas envasados y realizar integraciones con frameworks de middleware.
+* **Frameworks de integración middleware**: Su tarea es la integración de aplicaciones distribuidas y componentes.
+Su concepción responde a la necesidad de incrementar la capacidad de los desarrolladores de modularizar, reusar, y extender sus infraestructuras para trabajar sin problemas de forma distribuida.
+* **Frameworks de aplicaciones empresariales**: Este tipo de framework tiene un amplio rango de aplicaciones y cuenta con alto retorno de inversión (ROI) debido a que con ellos es posible desarrollar aplicaciones de alta calidad rápidamente.
+Sin embargo, el costo de desarrollar este tipo de frameworks es alto, por lo que generalmente se opta por adquirir sistemas envasados y realizar integraciones con frameworks de middleware.
 
 ## Clases  de frameworks
 
@@ -33,9 +36,11 @@ Su estructura basada en composición y delegación permite que sea más sencillo
 
 ## Patrones de diseño
 
-En las etapas de diseño, el diseñador es encasillado a las limitaciones introducidas por las decisiones de diseño implementadas en los componentes que debe reutilizar, considerando entre estas algoritmos particulares y las interfaces propias de los componentes/objetos. De esta forma Sommerville [@Sommerville2005] introduce el tópico de los patrones de diseño.
+En las etapas de diseño, el diseñador es encasillado a las limitaciones introducidas por las decisiones de diseño implementadas en los componentes que debe reutilizar, considerando entre estas algoritmos particulares y las interfaces propias de los componentes/objetos.
+De esta forma Sommerville [@Sommerville2005] introduce el tópico de los patrones de diseño.
 
-Un patrón de diseño es la descripción de un problema y la esencia de su solución, de forma que esta pueda ser reutilizada en distintas situaciones [@Sommerville2005]. Se destaca la naturaleza abstracta del patrón, mediante el no detallar la especificación, pero que, sin embargo es la descripción del conocimiento y experiencia acumulados.
+Un patrón de diseño es la descripción de un problema y la esencia de su solución, de forma que esta pueda ser reutilizada en distintas situaciones [@Sommerville2005].
+Se destaca la naturaleza abstracta del patrón, mediante el no detallar la especificación, pero que, sin embargo es la descripción del conocimiento y experiencia acumulados.
 
 En [@Gamma1994] se definen los 3 aspectos principales que un patron de diseño debe cumplir:
 
@@ -45,7 +50,8 @@ En [@Gamma1994] se definen los 3 aspectos principales que un patron de diseño d
 
 ## Patrones Arquitectónicos
 
-En [@Buschmann1996] se define un patrón arquitectónico como la expresión de una estructura fundamental para sistemas de software. [@Malinen2013] hace una referencia similar a lo que ocurre con los patrones de diseño, diciendo que "un patrón arquitectónico no es una arquitectura; un software concreto tiene una arquitectura que es una _instancia_ de un patrón arquitectónico" y a su vez, hace enfasis en que una de las características más importantes de los patrones arquitectónicos es proveer atributos de calidad.
+En [@Buschmann1996] se define un patrón arquitectónico como la expresión de una estructura fundamental para sistemas de software.
+[@Malinen2013] hace una referencia similar a lo que ocurre con los patrones de diseño, diciendo que "un patrón arquitectónico no es una arquitectura; un software concreto tiene una arquitectura que es una _instancia_ de un patrón arquitectónico" y a su vez, hace enfasis en que una de las características más importantes de los patrones arquitectónicos es proveer atributos de calidad.
 
 El patrón provee un conjunto definido de subsistemas, especificando sus responsabilidades e incluye las reglas y guias para organizar las relaciones entre ellos.
 
@@ -53,14 +59,21 @@ Para terminar, [@Bass2012] menciona que un patrón arquitectónico es una forma 
 
 ### Atributos de calidad
 
-Un atributo de calidad es una característica no funcional de un componente o sistema [@Dobrica2002] y expresan el como una aplicación debe lograr una necesidad dada [@Gorton2006]. El estándar ISO-9126-1 define seis categorias de características:
+Un atributo de calidad es una característica no funcional de un componente o sistema [@Dobrica2002] y expresan el como una aplicación debe lograr una necesidad dada [@Gorton2006].
+El estándar ISO-9126-1 define seis categorias de características:
 
-* **Eficiencia**: Consiste en un conjunto de atributos que indican el nivel de rendimiento y la cantidad de recursos utilizados. La eficiencia puede ser sub-caracterizada en función del tiempo y recursos utilizados.
-* **Funcionalidad**: Se refiere a al conjunto de funciones que satisfacen las necesidades requeridas. Consiste en la exactitud, interoperabilidad, seguridad y cumplimiento funcional.
-* **Mantenibilidad**: Se refiere al conjunto de atributos que indican el nivel de esfuerzo requerido para realizar cambios. Los puntos escenciales en esta categoria son las capacidades de realizar cambios, análisis, pruebas, estabilidad y cumplimiento de mantenibilidad.
-* **Portabilidad**: Es la capacidad del software de ser transferido de una plataforma a otra. Los atributos relacionados a esta categoria son la _adaptabilidad_, _instalabilidad_, _coexistencia_, _reemplazabilidad_ y cumplimiento de portabilidad.
-* **Confiabilidad**: Se refiere a la capacidad del software para actuar bajo ciertas condiciones en un periodo de tiempo definido. Las subcaracterísticas presentes son _madurez_, _tolerancia a fallos_, _recuperabilidad_ y cumplimiento de confiabilidad.
-* **Usabilidad**: Define la cantidad de esfuerzo necesario para usar el software. Posee 5 subcaracterísticas: _comprensibilidad_, _facilidad de aprendizaje_, _operabilidad_, _atractivo_ y cumplimiento de usabilidad.
+* **Eficiencia**: Consiste en un conjunto de atributos que indican el nivel de rendimiento y la cantidad de recursos utilizados.
+La eficiencia puede ser sub-caracterizada en función del tiempo y recursos utilizados.
+* **Funcionalidad**: Se refiere a al conjunto de funciones que satisfacen las necesidades requeridas.
+Consiste en la exactitud, interoperabilidad, seguridad y cumplimiento funcional.
+* **Mantenibilidad**: Se refiere al conjunto de atributos que indican el nivel de esfuerzo requerido para realizar cambios.
+Los puntos escenciales en esta categoria son las capacidades de realizar cambios, análisis, pruebas, estabilidad y cumplimiento de mantenibilidad.
+* **Portabilidad**: Es la capacidad del software de ser transferido de una plataforma a otra.
+Los atributos relacionados a esta categoria son la _adaptabilidad_, _instalabilidad_, _coexistencia_, _reemplazabilidad_ y cumplimiento de portabilidad.
+* **Confiabilidad**: Se refiere a la capacidad del software para actuar bajo ciertas condiciones en un periodo de tiempo definido.
+Las subcaracterísticas presentes son _madurez_, _tolerancia a fallos_, _recuperabilidad_ y cumplimiento de confiabilidad.
+* **Usabilidad**: Define la cantidad de esfuerzo necesario para usar el software.
+Posee 5 subcaracterísticas: _comprensibilidad_, _facilidad de aprendizaje_, _operabilidad_, _atractivo_ y cumplimiento de usabilidad.
 
 ### Patrón MVC
 
@@ -68,11 +81,15 @@ La literatura categoriza de distintas formas a este patrón, sus creadores, [@Bu
 
 En [@Buschmann1996] se define al patrón _MVC_ como un patrón arquitectónico que divide una aplicación interactiva en 3 componentes.
 
-* **Modelo**: Contiene la funcionalidad principal y los datos. Es independiente de las representaciones de salida o comportamientos de entrada.
-* **Vistas**: Muestran información al usuario. Una vista obtiene datos desde el modelo y pueden existir múltiples vistas para el mismo modelo.
+* **Modelo**: Contiene la funcionalidad principal y los datos.
+Es independiente de las representaciones de salida o comportamientos de entrada.
+* **Vistas**: Muestran información al usuario.
+Una vista obtiene datos desde el modelo y pueden existir múltiples vistas para el mismo modelo.
 * **Controladores**: Manejan la entrada del usuario, interactuando con el modelo y vistas para cumplir su función.
 
-El _contexto_ de aplicación de este patrón es en aplicaciones interactivas con interfaces flexibles humano-computador. El problema que este patrón soluciona se origina en las interfaces de usuarios, estas son especialmente propensas a cambiar en base a peticiones del cliente. Se requiere un alto nivel de flexibilidad para cumplir con estos requerimientos, ¿esta es dificilmente alcanzada si la interfaz de usuario está altamente ligada con la funcionalidad base.
+El _contexto_ de aplicación de este patrón es en aplicaciones interactivas con interfaces flexibles humano-computador.
+El problema que este patrón soluciona se origina en las interfaces de usuarios, estas son especialmente propensas a cambiar en base a peticiones del cliente.
+Se requiere un alto nivel de flexibilidad para cumplir con estos requerimientos, ¿esta es dificilmente alcanzada si la interfaz de usuario está altamente ligada con la funcionalidad base.
 
 Debido a la naturaleza cambiante del modelo, nace la necesidad de refrescar el contenido de las vistas, por lo que [@Buschmann1996] menciona que es escencial contar con un _mecanismo de prograpación de cambios_, que mantenga un registro de los componentes dependientes al modelo.
 
@@ -91,13 +108,17 @@ de interfaces de usuario sin mayores problemas.
 
 ## Web Service
 
-[@Austin2004] define un _Web Service_ como un sistema identificado por un _URI_ cuyas interfaces públicas y enlaces son descritos utilizando _XML_ (La descripción es realizada en un _Web Service Description Language_(_WSDL_). Su definición puede ser descubierta por otros sistemas, estos pueden interactuar con el _Web Service_ de acuerdo al comportamiento descrito en su definición, usando mensajes codificados en _XML_ transmitidos por protocolos de internet.
+[@Austin2004] define un _Web Service_ como un sistema identificado por un _URI_ cuyas interfaces públicas y enlaces son descritos utilizando _XML_ (La descripción es realizada en un _Web Service Description Language_(_WSDL_).
+Su definición puede ser descubierta por otros sistemas, estos pueden interactuar con el _Web Service_ de acuerdo al comportamiento descrito en su definición, usando mensajes codificados en _XML_ transmitidos por protocolos de internet.
 
-En [@Sleeper2001], el grupo Stencil define _Web Service_ como componentes de software de bajo acoplamiento y reusables, que encapsulan funcionalidad discreta y son distribuidos y accedidos mediante lenguajes de programación a través de protocolos de internet estándares. Otro aporte importante sobre la materia es aportada en este artículo, definiendo las capas de bajo nivel de esta tecnología:
+En [@Sleeper2001], el grupo Stencil define _Web Service_ como componentes de software de bajo acoplamiento y reusables, que encapsulan funcionalidad discreta y son distribuidos y accedidos mediante lenguajes de programación a través de protocolos de internet estándares.
+Otro aporte importante sobre la materia es aportada en este artículo, definiendo las capas de bajo nivel de esta tecnología:
 
-* **Protocolos de transporte comunes en internet**: Aunque los _web services_ no se asocian en particular a algún protocolo de transporte, se intenta que esta elección garantize el alcance y soporte universal. Generalmente, los _web services_ utilizan el protocolo _HTTP_, utilizado principalmente por servidores web y navegadores.
+* **Protocolos de transporte comunes en internet**: Aunque los _web services_ no se asocian en particular a algún protocolo de transporte, se intenta que esta elección garantize el alcance y soporte universal.
+Generalmente, los _web services_ utilizan el protocolo _HTTP_, utilizado principalmente por servidores web y navegadores.
 * **Extensible Markup Language (XML)**: Es un formato ampliamente aceptado para el intercambio de datos y su semántica de correspondencia.
-* **Simple Object Access Protocol (SOAP)**: Es un protocolo de mensajeria y de comunicación tipo _RPC_ (Remote Procedure Call o llamada de procedimiento remoto) entre aplicaciones. Se basa en _XML_ y usa protocolos de transporte de internet como el _HTTP_ para mover datos.
+* **Simple Object Access Protocol (SOAP)**: Es un protocolo de mensajeria y de comunicación tipo _RPC_ (Remote Procedure Call o llamada de procedimiento remoto) entre aplicaciones.
+Se basa en _XML_ y usa protocolos de transporte de internet como el _HTTP_ para mover datos.
 
 Tambien se definen las capas de mayor nivel:
 
@@ -111,8 +132,11 @@ Tambien se definen las capas de mayor nivel:
 Fielding describe a _REST_ como un estilo arquitectónico para sistemas de hipermedia distribuidos en [@Fielding2000].
 [@Skulason2008] asevera que la arquitectura _REST_ es un tipo de _Web Service_, sin embargo la gran diferencia está en que _REST_ fue diseñado para la web y sus protocolos, limitandose exclusivamente a esas áreas.
 
-Continuando la comparativa, Magnus hace notar que las diferencias entre ambas tecnologias yace en la codificación y forma de enviar los mensajes: En _SOAP_ se busca canalizar toda la información necesaria en una envoltura _SOAP_, por ejemplo, al enviar mensajes _SOAP_ mediante _HTTP_, se envia el mensaje en el body del request _POST_. Mientras que en _REST_, el único método de transporte válido es _HTTP_, por lo que se aprovechan las características de este protocolo.
-De esta forma, la arquitectura _REST_ es centralizada en utilizar URLs para acceder a _entidades_ y _recursos_. Teniendo definido el "donde" se accede a los datos, es necesario definir el "cómo", aquí nuevamente se aprovecha el estándar HTTP, utilizando sus verbos: _GET_, _HEAD_, _PUT_, _DELETE_ y _POST_. El uso de cada verbo puede verse en la siguiente lista:
+Continuando la comparativa, Magnus hace notar que las diferencias entre ambas tecnologias yace en la codificación y forma de enviar los mensajes: En _SOAP_ se busca canalizar toda la información necesaria en una envoltura _SOAP_, por ejemplo, al enviar mensajes _SOAP_ mediante _HTTP_, se envia el mensaje en el body del request _POST_.
+Mientras que en _REST_, el único método de transporte válido es _HTTP_, por lo que se aprovechan las características de este protocolo.
+De esta forma, la arquitectura _REST_ es centralizada en utilizar URLs para acceder a _entidades_ y _recursos_.
+Teniendo definido el "donde" se accede a los datos, es necesario definir el "cómo", aquí nuevamente se aprovecha el estándar HTTP, utilizando sus verbos: _GET_, _HEAD_, _PUT_, _DELETE_ y _POST_.
+El uso de cada verbo puede verse en la siguiente lista:
 
 * **GET**: Muestra el estado actual del recurso.
 * **DELETE**: Elimina el recurso.
@@ -120,11 +144,12 @@ De esta forma, la arquitectura _REST_ es centralizada en utilizar URLs para acce
 * **POST**: Crea un nuevo recurso.
 
 _REST_ no restringe el formato de codificación de los mensajes, siendo la única limitación, que estos puedan ser contenidos en el body de un request _HTTP_.
-Las estructuras que se utilizan comunmente incluyen _XML_, _Atom_, _RSS_, _XHTML_, _Schema XML_ y _JSON_ (JavaScript Object Notation, una _serialización_ de objetos Javascript en forma de texto). La última estructura es usada intensivamente en aplicaciones web que utilizan _AJAX_ (Asynchronous Javascript and XML), donde los clientes javascript presentes en navegadores son usados para extraer y actualizar contenido sin refrescar la página.
+Las estructuras que se utilizan comunmente incluyen _XML_, _Atom_, _RSS_, _XHTML_, _Schema XML_ y _JSON_ (JavaScript Object Notation, una _serialización_ de objetos Javascript en forma de texto).
+La última estructura es usada intensivamente en aplicaciones web que utilizan _AJAX_ (Asynchronous Javascript and XML), donde los clientes javascript presentes en navegadores son usados para extraer y actualizar contenido sin refrescar la página.
 
 ## Base de datos
 
-Antes de poder definir una base de datos como tal, en [@Ceruti1999] se presenta una definición de _dato_, esta palabra es un sustantivo que se refiere a cosas sabidas o asumidas; hechos o figuras desde las cuales se pueden construir conclusiones, generando así _información.
+Antes de poder definir una base de datos como tal, en [@Ceruti1999] se presenta una definición de _dato_, esta palabra es un sustantivo que se refiere a cosas sabidas o asumidas; hechos o figuras desde las cuales se pueden construir conclusiones, generando así _información_.
 Esta definición es complementada por el Departamento de defensa de los Estados Unidos [@???], diciendo que un dato es una representación de hechos, conceptos o instrucciones de una forma normalizada que es adecuada para la comunicación, interpretación o procesado, ya sea por humanos o de forma automática.
 
 A partir de la definición de dato, es posible construir un conjunto de datos, a lo que Ceruti caracteriza como una pila de datos que estan relacionados de alguna forma.

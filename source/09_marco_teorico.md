@@ -170,8 +170,8 @@ De esta forma, el _ORM_ se encarga de manejar en tiempo de ejecución las relaci
 
 ## Bean Validation
 
-En [@Bernard2009] se dice que la validación de datos es una tarea que ocurre en la aplicación, desde la capa de presentación a la capa de persistencia.
+La validación de datos es una tarea que ocurre en la aplicación, desde la capa de presentación a la capa de persistencia [@Bernard2009].
 Muchas veces la lógica desarrollada es implementada en cada capa, lo que es susceptible a fallos y una pérdida de tiempo.
-Para solucionar el problema de la duplicación de código de validación, los desarrolladores suelen implementar esta lógica en el modelo del dominio, sin embargo esto provoca que las clases del dominio estén abarrotadas con código que a fin de cuentas es información de la propia clase.
+Para solucionar el problema de duplicación de código de validación, los desarrolladores suelen implementar esta lógica en el modelo del dominio, sin embargo esto provoca que las clases del dominio estén abarrotadas con código que a fin de cuentas es información de la propia clase.
 
-La _JSR_ o _Java Specification Request_ expuesta, define un modelo de metados y un _API_ para validación, pudiendo este ser implementado en forma de _anotaciones_ o descripciones en _XML_.
+_Bean Validation_ es presentado en la _JSR_ (_Java Specification Request_) 303 [@Bernard2009], definiendo un modelo de metados y un _API_ para validación, el que puede ser implementado en forma de _anotaciones_ o descripciones utilizando _XML_.

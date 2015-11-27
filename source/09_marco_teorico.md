@@ -179,3 +179,55 @@ Muchas veces la lógica desarrollada es implementada en cada capa, lo que es sus
 Para solucionar el problema de duplicación de código de validación, los desarrolladores suelen implementar esta lógica en el modelo del dominio, sin embargo esto provoca que las clases del dominio estén abarrotadas con código que a fin de cuentas es información de la propia clase.
 
 _Bean Validation_ es presentado en la _JSR_ (_Java Specification Request_) 303 [@Bernard2009], definiendo un modelo de metados y un _API_ para validación, el que puede ser implementado en forma de _anotaciones_ o descripciones utilizando _XML_.
+
+
+## Lenguaje de Programación Java
+
+El lenguaje de programación Java fue desarrollado por _Sun Microsystems_ a principios de los 90, para proveer un lenguaje orientado a objetos, portable e interpretado, su gran propuesta de valor es el manejo de memoria, esta es manejada de forma automática [@Gosling1995].
+
+<!-- Agregar info sobre la JVM, J2SE y J2EE -->
+
+## Framework Spring
+
+Spring es el framework de desarrollo más popular de la plataforma Java [@DashrathMane2013]. Este framework provee un modelo exhaustivo de programación y configuración para aplicaciones de negocio modernas basadas en Java, para cualquier tipo de infraestructura; su objetivo es hacer más sencillo el desarrollo de aplicaciones _J2EE_ para usar y promover buenas prácticas de programación utilizando un modelo de programación basado en _POJO_ (Clases Java simples, independientes de algún framework).
+_Spring_ posee un diseño modular, que permite la adición de componentes tales como el _contenedor_ principal o el soporte _JDBC_.
+
+Esta imagen muestra las capas de componentes del framework:
+
+![Spring Framework Architecture](source/figures/001_spring_framework_architecture.png)
+
+### Core Container
+
+Aquí se encuentran las funciones principales del framework y se compone de los siguientes módulos:
+
+* _Core_: Provee las partes fundamentales del framework, incluyendo las funcionalides de _Inversión de control_ (IoC) e _Inyección de Dependencias_ (Dependency Injection).
+* _Bean_: Provee la _BeanFactory_, una implementación del patrón _Factory_.
+* _Context_: Utiliza los módulos _Core_ y _Bean_ para proveer acceso a cualquier objeto definido y configurado.
+* _Expression Language_: Permite un lenguaje de expresiones para acceder y manipular grafos de objetos en tiempo de ejecución.
+
+### Data Access/Integration
+
+Esta capa incluye los siguientes módulos:
+
+* _JDBC_: Provee una capa de abstracción sobre _JDBC_, eliminando la necesidad de la tediosa programación relacionada a _JDBC_.
+* _ORM_: Provee capas de integración para APIs de _ORM_ populares, incluyendo _JPA_, _JDO_, _Hibernate_ y _iBatis_.
+* _OXM_: Provee una capa de abstracción que soporta implementaciones de mapeos _Objeto/XML_ para _JAXB_, _Castor_, _XMLBeans_, _JiBX_ y _Xstream_.
+* _JMS_: Este módulo contiene características para producir y consumir mensajes.
+* _Transactions_: Soporta manejo transaccional programático y declarativo para aquellas clases que implementan interfaces especiales y _POJOS_ definidos por el usuario.
+
+### Web
+
+La capa web de _Spring_ es compuesta por los siguientes módulos:
+
+* _Web_: Este módulo provee funcionalidades básicas orientadas a web, tales como el manejo de subida de ficheros multipart y la inicialización de contextos y servlets para la web.
+* _Web-Servlet_: Este módulo contiene la implementación del patrón MVC de Spring.
+* _Web-Struts_: Este módulo contiene las clases utilizadas para integrar una aplicación Struts con Spring.
+
+### Miscelaneos
+
+Esta capa incluye soporte para orientación a aspectos y pruebas:
+
+* _AOP_ (Aspect Oriented Programming): Este módulo provee una implementación para orientación a aspectos, en la cual se definen intercepciones en llamadas a métodos y puntos de corte, los que permiten desacoplar código que implemente funcionalidad que debe ser separada.
+* _Aspects_: Provee integración con el framework _AspectJ_.
+* _Instrumentation_: Provee clases de instrumentación para ser usados sobre ciertos servidores de aplicaciones.
+* _Test_: Este módulo permite realizar pruebas sobre componentes _Spring_ con los frameworks _Junit_ o _TestNG_.

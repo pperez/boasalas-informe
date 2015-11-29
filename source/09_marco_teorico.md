@@ -110,6 +110,11 @@ de interfaces de usuario sin mayores problemas.
 [@Supaartagorn2011] menciona que usualmente los frameworks para construir aplicaciones web implementan el modelo _MVC_.
 -->
 
+
+### Patrón Inyección de dependencias
+
+
+
 ## Web Service
 
 Un _Web Service_ es un sistema identificado por un _URI_ cuyas interfaces públicas y enlaces son descritos utilizando _XML_ (La descripción es realizada en un _Web Service Description Language_(_WSDL_) [@Austin2004].
@@ -178,7 +183,7 @@ La validación de datos es una tarea que ocurre en la aplicación, desde la capa
 Muchas veces la lógica desarrollada es implementada en cada capa, lo que es susceptible a fallos y una pérdida de tiempo.
 Para solucionar el problema de duplicación de código de validación, los desarrolladores suelen implementar esta lógica en el modelo del dominio, sin embargo esto provoca que las clases del dominio estén abarrotadas con código que a fin de cuentas es información de la propia clase.
 
-_Bean Validation_ es presentado en la _JSR_ (_Java Specification Request_) 303 [@Bernard2009], definiendo un modelo de metados y un _API_ para validación, el que puede ser implementado en forma de _anotaciones_ o descripciones utilizando _XML_.
+_Bean Validation_ es presentado en la _JSR_ (_Java Specification Request_) 303 [@Bernard2009], definiendo un modelo de metadatos y un _API_ para validación, el que puede ser implementado en forma de _anotaciones_ o descripciones utilizando _XML_.
 
 
 ## Lenguaje de Programación Java

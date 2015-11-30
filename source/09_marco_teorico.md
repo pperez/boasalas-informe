@@ -1,5 +1,23 @@
 # Marco teórico
 
+## Campus
+
+La _Real Academia Española_ define campus como el "Conjunto de terrenos y edificios pertenecientes a una universidad" [@Espanol2015].
+
+## Asignación de salas y laboratorios
+
+## Curso y sección
+
+## Sistema
+
+Un sistema es un conjunto de elementos interdependientes e interactuantes; un grupo de unidades combinadas que forman un todo organizado, cuyo resultado es mayor que el resultado que las unidades podrían tener si funcionaran independientemente [@Chiavenato1995].
+
+Al llevar este término a la informática, se limitan los elementos/componentes a _hardware_, _software_ y _humanos_ (humanware) [@JaramilloBarea2012].
+
+## Plataforma
+
+## Sistema integrable
+
 ## Framework
 
 Un framework es una aplicación reusable y "semi-completa" que puede ser especializada para producir aplicaciones personalizadas [@Fayad1997].
@@ -16,17 +34,17 @@ Existen 3 tipos de frameworks [@Fayad1997]:
 Su concepción responde a la necesidad de incrementar la capacidad de los desarrolladores de modularizar, reusar, y extender sus infraestructuras para trabajar sin problemas de forma distribuida.
 * **Frameworks de aplicaciones empresariales**: Este tipo de framework tiene un amplio rango de aplicaciones y cuenta con alto retorno de inversión (ROI) debido a que con ellos es posible desarrollar aplicaciones de alta calidad rápidamente; sin embargo, el costo de desarrollar este tipo de frameworks es alto, por lo que generalmente se opta por adquirir sistemas envasados y realizar integraciones con frameworks de middleware.
 
-## Clases  de frameworks
+### Clases  de frameworks
 
 Hay dos clases de frameworks, estas se diferencian por la forma en que sus componentes son reutilizados y extendidos (Para añadir funcionalidad no ofrecida) [@Fayad1997].
 
-### Frameworks White-box
+#### Frameworks White-box
 
 Su reuso y extensión es realizado mediante herencia y sobrecarga de métodos _hooks_ predefinidos (Utilizando patrones como _Template Method_ [@Gamma1994] o similares).
 
 Debido a su forma de reuso y extensión (Herencia) es necesario que el desarrollador tenga un íntimo conocimiento de cada pieza interna de estos, produciendo que el software desarrollado tenga un gran acoplamiento a la estructura jerárquica de herencia del framework.
 
-### Frameworks Black-box
+#### Frameworks Black-box
 
 La extensión en esta clase de frameworks es realizada definiendo interfaces compatibles con el framework e inyectándolas a este mediante composición.
 

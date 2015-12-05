@@ -1,1 +1,1 @@
-# Implementación y puesta en marcha
+# Diseño de un sistema propio

@@ -68,6 +68,18 @@ Hay 3 aspectos principales que todo patrón de diseño debe incluir [@Gamma1994]
 * El _problema de diseño_ que será abordado por la estructura abstracta, de esta forma se determina en que escenarios es aplicable el patrón.
 * Las _consecuencias_ (positivas y negativas) introducidas al aplicar la estructura abstracta a la arquitectura del sistema. Este punto ayuda a determinar si el patrón debe aplicarse o no.
 
+### Patrón Factory
+
+### Patrón Builder
+
+### Patrón Proxy
+
+### Patrón Singleton
+
+### Patrón Inyección de dependencias
+
+### Patrón Repository
+
 ## Patrones Arquitectónicos
 
 Un _patrón arquitectónico_ es la expresión de una estructura fundamental para sistemas de software [@Buschmann1996].
@@ -128,10 +140,11 @@ de interfaces de usuario sin mayores problemas.
 [@Supaartagorn2011] menciona que usualmente los frameworks para construir aplicaciones web implementan el modelo _MVC_.
 -->
 
+### Patrón _Service Oriented Architecture_ (_SOA_)
 
-### Patrón Inyección de dependencias
+## API (_Application Programming Interface_)
 
-
+## HTTP
 
 ## Web Service
 
@@ -183,9 +196,13 @@ Esta definición es complementada por el Departamento de defensa de los Estados 
 
 TODO: Terminar esto, suena pajoso -->
 
-## Programación orientada a objetos
+## Paradigmas de programación
 
-<!-- Filler -->
+### Programación orientada a objetos
+
+### Programación orientada a aspectos
+
+### Inversión de Control (_IOC_)
 
 ## Java Persistence API
 
@@ -208,7 +225,8 @@ _Bean Validation_ es presentado en la _JSR_ (_Java Specification Request_) 303 [
 
 El lenguaje de programación Java fue desarrollado por _Sun Microsystems_ a principios de los 90, para proveer un lenguaje orientado a objetos, portable e interpretado, su gran propuesta de valor es el manejo de memoria, esta es manejada de forma automática [@Gosling1995].
 
-<!-- Agregar info sobre la JVM, J2SE y J2EE -->
+<!-- TODO: Agregar info sobre la JVM, J2SE y J2EE -->
+<!-- TODO: Agregar info sobre servidores de aplicaciones -->
 
 ## Framework Spring
 
@@ -254,3 +272,30 @@ Esta capa incluye soporte para orientación a aspectos y pruebas:
 * _Aspects_: Provee integración con el framework _AspectJ_.
 * _Instrumentation_: Provee clases de instrumentación para ser usados sobre ciertos servidores de aplicaciones.
 * _Test_: Este módulo permite realizar pruebas sobre componentes _Spring_ con los frameworks _Junit_ o _TestNG_.
+
+
+## Digital Signage (Cartelería Digital)
+
+## _UI_ (_User Interface_) y _UX_ (_User Experience_)
+
+## _ACL_ (_Access Control List_)
+
+## SEPA (_Sistema Estadístico Profesores y Alumnos_)
+
+## Scheduler
+
+## Historias de Usuario
+
+Una historia de usuario describe funcionalidad valiosa para un usuario o comprador de un sistema o software [@Cohn2004]. En su libro, Cohn muestra que una historia de usuario es compuesta por 3 aspectos:
+
+* Una descripción escrita de la historia, utilizada para planificación y como recordatorio.
+* Conversaciones acerca de la historia que sirvan para profundizar los detalles de la historia.
+* Pruebas que comuniquen y documenten los detalles, estas pueden ser utilizadas para determinar cuando una historia este completa.
+
+Debido a que las historias de usuario son generalmente escritas en papel [@Cohn2004], es que podemos nombrar a estos aspectos como _Tarjeta_ (_Card_), _Conversación_ (_Conversation_) y _Confirmación_ (_Confirmation_) [@Jeffries2001].
+
+Hay que tener en consideración que las historias de usuario deben _representar_ el interés del cliente en el sistema/software, mas no _documentarlo_, esto quiere decir que al confeccionar historias de usuario se deben dejar de lado comentarios que hagan referencia a la implementación (A menos que el interés principal del cliente sea este, debido al mercado en que el software se insertará) [@Cohn2004].
+
+<!-- TODO: Añadir una imagen que muestre los 3 aspectos de una historia de usuario -->
+
+## ETL (_Extraction Transformation Load_)

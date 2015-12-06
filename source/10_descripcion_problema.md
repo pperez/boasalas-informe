@@ -50,3 +50,14 @@ Este software ofrece integración con sistemas de _Digital Signage_, permitiendo
 El diseño desde cero de un sistema permite evitar las complicaciones encontradas al adoptar una solución envasada, sobre todo si esta no tiene la flexibilidad suficiente para adaptarse a los variados requerimientos presentados en distintas instituciones.
 
 Un sistema construido desde cero debe proveer funcionalidades acordes al estado de adopción tecnológica de la sociedad, sociedad en que el uso de _smartphones_ asciende cada vez más [@Heggestuen2013]. Las características que incluya este sistema no solo deben ceñirse al tipo de tecnología de moda, más bien debe aprovecharse de estas tecnologías para facilitar la calidad de vida de los usuarios, aterrizando este punto al presente trabajo, es entregar una gran experiencia en _UX_ (User Experience).
+
+Con estas premisas en mente, las características ofrecidas por el sistema deberian ser:
+
+* Integración unidireccional con el _SIS_ de la institución (Dirdoc, para el caso actual).
+* Exposición de un _API REST_, permitiendo el desarrollo de aplicaciones para distintas marcas y modelos de smartphones u otros dispositivos inteligentes.
+* Plataforma web para administración de reservas de salas.
+* Manejo de información granular con perfiles de usuarios y reglas de control de acceso (_ACL_).
+* Plataforma web para visualización de reservas y horarios, para académicos, estudiantes y administrativos.
+* Confección de informes de gestión y automatización del envio de estos a los distintos administrativos interesados.
+
+En el siguiente capitulo se presenta una propuesta que cumpla las características mencionadas.

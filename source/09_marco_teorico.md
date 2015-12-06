@@ -70,6 +70,14 @@ Hay 3 aspectos principales que todo patrón de diseño debe incluir [@Gamma1994]
 
 ### Patrón Factory
 
+Este patrón se encarga de escoger y retornar una clase desde un conjunto de clases en función a un dato provisto. Comúnmente, el conjunto de clases comparte un _ancestro_ en común (Por lo que la interfaz de uso es igual para todas), pero cada una de ellas realiza distinta lógica [@Cooper1998].
+
+Es recomendable utilizar el patrón _Factory_ en las siguientes situaciones:
+
+* Una clase no puede anticipar que clase de objetos debe crear.
+* Una clase utiliza sus subclases para especificar que objetos crea.
+* Es necesario definir el _dónde_ almacenar la lógica en que se escoge la clase a crear.
+
 ### Patrón Builder
 
 ### Patrón Proxy
@@ -209,6 +217,7 @@ TODO: Terminar esto, suena pajoso -->
 ### Programación orientada a aspectos
 
 ### Inversión de Control (_IOC_)
+
 
 ## Java Persistence API
 

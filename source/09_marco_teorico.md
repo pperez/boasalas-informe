@@ -84,6 +84,8 @@ Es recomendable utilizar el patrón _Factory_ en las siguientes situaciones:
 
 ### Patrón Singleton
 
+El uso del patrón _Singleton_ es recomendado cuando la lógica de la aplicación requiere que exista solo una instancia de una clase [@Cooper1998]. Esta técnica es utilizada por defecto en _Spring Framework_ al definir componentes, ya que por defecto son _Singletons_.
+
 ### Patrón Inyección de dependencias
 
 ### Patrón Repository

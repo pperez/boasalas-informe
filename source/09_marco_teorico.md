@@ -142,6 +142,12 @@ de interfaces de usuario sin mayores problemas.
 
 ### Patrón _Service Oriented Architecture_ (_SOA_)
 
+## Componente
+
+Un componente es un trozo de software, cuyo propósito es ser utilizado, sin cambio alguno, por una aplicación que esta fuera del control de los escritores del componente [@Fowler2004].
+
+Un término similar es el de _Servicio_, cuya principal diferencia es la localidad de uso del componente, en un servicio se espera que el uso sea remoto, mediante alguna interfaz remota; aunque en términos prácticos pueden utilizarse como sinónimos [@Fowler2004].
+
 ## API (_Application Programming Interface_)
 
 ## HTTP

@@ -316,3 +316,5 @@ Hay que tener en consideración que las historias de usuario deben _representar_
 <!-- TODO: Añadir una imagen que muestre los 3 aspectos de una historia de usuario -->
 
 ## ETL (_Extraction Transformation Load_)
+
+Es un proceso encargado de extraer datos de sistemas posiblemente heterogéneos, realizar transformaciones (ej: conversión y limpieza de datos) para finalmente cargar los datos transformados en el almacen de datos objetivo [@Thomsen2009].

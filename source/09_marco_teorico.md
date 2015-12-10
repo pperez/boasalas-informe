@@ -84,6 +84,8 @@ Es recomendable utilizar el patrón _Factory_ en las siguientes situaciones:
 
 Este patrón es utilizado cuando se necesita representar un objeto complejo como uno más simple [@Cooper1998]. Otro uso de este patrón es la optimización del uso de recursos, ya que un _Proxy_ puede retrasar la carga de un objeto que incurra en altos tiempos de carga (ej: cargar una imagen, inicializar un array) hasta que este sea realmente necesario. Finalmente, un uso muy común de este patrón es para enforzar los permisos de acceso a objetos, permitiendo un acceso granular a los objetos de negocio [@Cooper1998].
 
+<!-- TODO: Añadir una imagen explicativa del patrón proxy, me tinca algo con seguridad como los filtros de laravel -->
+
 ### Patrón Singleton
 
 El uso del patrón _Singleton_ es recomendado cuando la lógica de la aplicación requiere que exista solo una instancia de una clase [@Cooper1998]. Esta técnica es muy utilizada en _Spring Framework_ al definir componentes, ya que por defecto son _Singletons_.

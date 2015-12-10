@@ -242,6 +242,7 @@ Actualmente, el paradigma de programación predominante es el _Orientado a objet
 
 ### Inversión de Control (_IOC_)
 
+<!-- TODO: Calzar a jefe para que me explique con peras y manzanitas esto y el patrón DI -->
 
 ## Java Persistence API
 
@@ -277,6 +278,7 @@ _Spring_ posee un diseño modular, que permite la adición de componentes tales 
 Esta imagen muestra las capas de componentes del framework:
 
 ![Spring Framework Architecture](source/figures/001_spring_framework_architecture.png)\newline
+<!-- TODO: Eliminar el hack feo de la imagen -->
 
 ### Core Container
 

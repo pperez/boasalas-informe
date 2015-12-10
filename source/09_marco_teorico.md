@@ -94,6 +94,16 @@ El uso del patrón _Singleton_ es recomendado cuando la lógica de la aplicació
 
 ### Patrón Repository
 
+El patrón Repository nace de los problemas generados al acceder a los datos presentes en una aplicación, estos datos pueden existir en diversos almacenamientos, ya sean bases de datos, web services, ficheros de texto u otros; el acceso directo a datos puede generar los siguientes problemas:
+
+* Código duplicado.
+* Aumentar la probabilidad de errores de programación.
+* Bajo control de los datos de negocio.
+* Dificultad al centralizar políticas relacionadas a datos tales como _cache_.
+* Imposibilitar la realización de pruebas a la lógica de negocio en forma aislada (Pruebas unitarias).
+
+Estas problemáticas son agrupadas bajo la necesidad de unificar el punto de acceso a datos en la aplicación. Es así que este patrón ofrece una interfaz centralizada para el acceso a datos, reutilizable en alguna capa de la aplicación [@Evans2004].
+
 ## Patrones Arquitectónicos
 
 Un _patrón arquitectónico_ es la expresión de una estructura fundamental para sistemas de software [@Buschmann1996].
@@ -237,8 +247,10 @@ Actualmente, el paradigma de programación predominante es el _Orientado a objet
 
 La función de la _Java Persistence API_ o _JPA_, es especificar un modelo de persistencia estándar y sencillo de usar en plataformas Java SE y Java EE [@Boeck2011].
 Su principal característica es la especificación del _object relational mapping_ (Mapeo objeto-relacional) directamente en los objetos de persistencia, conocidos en este contexto como entidades.
+
 Un _mapeo objeto-relacional_ (_ORM_), provee un mecanismo para que sistemas orientados a objetos mantengan sus datos de forma segura en una base de datos, con manejo transaccional y controlados mediante objetos cuando sea necesario [@ONeil2008].
-De esta forma, el _ORM_ se encarga de manejar en tiempo de ejecución las relaciones entre las entidades, entregando grafos de objetos que representan relaciones complejas entre objetos; también se encarga de seguir el ciclo de vida de los objetos, llevando la cuenta de las acciones aplicadas sobre ellos y ejecutando las queries SQL necesarias para persistir estos hechos en la base de datos.
+
+El _ORM_ se encarga de manejar en tiempo de ejecución las relaciones entre las entidades, entregando grafos de objetos que representan relaciones complejas entre objetos; también se encarga de seguir el ciclo de vida de los objetos, llevando la cuenta de las acciones aplicadas sobre ellos y ejecutando las queries SQL necesarias para persistir estos eventos en la base de datos.
 
 
 ## Bean Validation
@@ -264,7 +276,7 @@ _Spring_ posee un diseño modular, que permite la adición de componentes tales 
 
 Esta imagen muestra las capas de componentes del framework:
 
-![Spring Framework Architecture](source/figures/001_spring_framework_architecture.png)
+![Spring Framework Architecture](source/figures/001_spring_framework_architecture.png)\newline
 
 ### Core Container
 

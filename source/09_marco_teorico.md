@@ -295,7 +295,10 @@ Esta capa incluye soporte para orientación a aspectos y pruebas:
 
 ## _UI_ (_User Interface_) y _UX_ (_User Experience_)
 
-## _ACL_ (_Access Control List_)
+## Role Based Access Control (_RBAC_)
+
+La idea central de esta técnica de control de acceso, es que los usuarios no tienen acceso a los objetos de negocio; si no que los permisos son asociados a roles, y los usuarios pasan a ser miembros de los roles apropiados o reasignados de roles de ser necesario. De esta forma se simplifica el manejo de la _autorización_ y se provee una forma flexible de especificar y enforzar las políticas de protección de negocio [@Ferraiolo1995]. Otro punto a favor de esta técnica, es el manejo de _permisos_, debido a que es posible asignar nuevos permisos a medida que se implementan nuevas aplicaciones o funcionalidades, o revocar permisos a un rol de ser necesario.
+
 
 ## SEPA (_Sistema Estadístico Profesores y Alumnos_)
 

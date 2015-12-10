@@ -291,9 +291,11 @@ Esta capa incluye soporte para orientación a aspectos y pruebas:
 * _Test_: Este módulo permite realizar pruebas sobre componentes _Spring_ con los frameworks _Junit_ o _TestNG_.
 
 
-## Digital Signage (Cartelería Digital)
+## Digital Signage (_Cartelería Digital_)
 
-## _UI_ (_User Interface_) y _UX_ (_User Experience_)
+La cartelería digital es una forma de tecnología de publicidad electrónica que soporta la presentación de contenidos multimedia de forma dinámica [@Harrison2004].
+
+En su forma más básica, un letrero digital se compone de un dispositivo de visualización y un controlador de visualización, donde un  dispositivo de visualización puede ser un monitor _LCD_, _LED_ o incluso un proyector. El dispostivo controlador de visualización puede ir desde un reproductor de DVD a un computador de propósitos generales [@Harrison2004].
 
 ## Role Based Access Control (_RBAC_)
 

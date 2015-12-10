@@ -1,11 +1,5 @@
 # Diseño de un sistema "in-house"
 
-## Modelo de datos (Lógico-Relacional)
-
-Para cumplir con los requerimientos, el modelado de datos fue el siguiente:
-
-![Modelo Lógico-Relacional](source/figures/002_diagram_salas.png)
-
 ## Descripción de módulos
 
 Este apartado detalla las funciones de cada módulo y las tecnologías utilizadas en cada uno de ellos.
@@ -69,6 +63,13 @@ Los componentes tecnológicos a utilizar en este módulo son los siguientes:
 
 * **JSF**: Framework web, orientado a componentes. <!-- TODO: mejorar esto, suena paupérrimo -->
 * **Spring Security**: Este componente es utilizado para manejar el acceso (o denegación de este) a los distintos recursos, implementando complejas lógicas de _ACL_ basadas en los perfiles existentes.
+
+
+## Modelo de datos (Lógico-Relacional)
+
+Para cumplir con los requerimientos, el modelado de datos fue el siguiente:
+
+![Modelo Lógico-Relacional](source/figures/002_diagram_salas.png)
 
 
 ## Carta Gantt

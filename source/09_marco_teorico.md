@@ -299,7 +299,11 @@ Esta capa incluye soporte para orientación a aspectos y pruebas:
 
 ## SEPA (_Sistema Estadístico Profesores y Alumnos_)
 
-## Scheduler
+<!-- Buscar en la biblioteca el tt de sepa -->
+
+## Scheduler de tareas basado en tiempo
+
+El propósito de un _Scheduler_ de tareas basado en tiempo es ejecutar comandos, series de comandos o scripts en un horario determinado. Un scheduler es generalmente ejecutado en sistemas que están corriendo las 24 horas del día, 7 días a la semana [@Peters2009].
 
 ## Historias de Usuario
 
@@ -314,6 +318,7 @@ Debido a que las historias de usuario son generalmente escritas en papel [@Cohn2
 Hay que tener en consideración que las historias de usuario deben _representar_ el interés del cliente en el sistema/software, mas no _documentarlo_, esto quiere decir que al confeccionar historias de usuario se deben dejar de lado comentarios que hagan referencia a la implementación (A menos que el interés principal del cliente sea este, debido al mercado en que el software se insertará) [@Cohn2004].
 
 <!-- TODO: Añadir una imagen que muestre los 3 aspectos de una historia de usuario -->
+
 
 ## ETL (_Extraction Transformation Load_)
 

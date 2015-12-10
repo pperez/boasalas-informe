@@ -216,7 +216,15 @@ TODO: Terminar esto, suena pajoso -->
 
 ### Programación orientada a objetos
 
+Este paradigma de programación insta a la construcción de sistemas mediante la descomposición del problema en objetos para luego escribir las interacciones entre estos objetos. Un objeto permite abstraer comportamiento y datos en una sola entidad conceptual (y física) [@Elrad2001].
+
+<!--
 ### Programación orientada a aspectos
+
+La programación orientada a aspectos sigue el linaje dejado por la programación procedural, estructurada, funcional, lógica y con tipos de datos abstractos, en la tarea de lograr una separación clara de los asuntos/preocupaciones en el nivel del código fuente [@Elrad2001].
+
+Actualmente, el paradigma de programación predominante es el _Orientado a objetos_ [@Elrad2001], este ha permitido el desarrollo de grandes aplicaciones, sin embargo posee sus limitaciones. Estas limitaciones se presentan al observar requerimientos que no pueden ser satisfechos enfocándose en uno o dos objetos, sino que deben ser satisfechos enfocándose en la interacción entre ellos y restricciones globales.
+-->
 
 ### Inversión de Control (_IOC_)
 

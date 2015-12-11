@@ -228,6 +228,8 @@ TODO: Terminar esto, suena pajoso -->
 
 ## Paradigmas de programación
 
+Un paradigma de programación es un estilo o "forma" de programación [@Floyd1979].
+
 ### Programación orientada a objetos
 
 Este paradigma de programación insta a la construcción de sistemas mediante la descomposición del problema en objetos para luego escribir las interacciones entre estos objetos. Un objeto permite abstraer comportamiento y datos en una sola entidad conceptual (y física) [@Elrad2001].

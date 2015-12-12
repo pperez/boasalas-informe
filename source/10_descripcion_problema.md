@@ -22,12 +22,8 @@ Las soluciones presentes en el mercado ofrecen las siguientes características:
 
 Las soluciones de este tipo evaluadas fueron:
 
-* _U-Booking_ (De _U-Planner_)
 * _EMS Campus_ (De _Deans Evans & Associates_).
-
-#### U-Booking
-
-_U-Booking_ es uno de los productos de _U-Planner_ en que se aplica ingeniería a la educación, su función principal es la reserva y publicación de salas.
+* _25Live_ (De _CollegeNET_)
 
 
 #### Event Management System (EMS) Campus
@@ -44,6 +40,27 @@ Este software, es la respuesta de _Deans Evans & Associates_ para el manejo de s
 * Registro auditable de transacciones (Reservas y demases eventos gatillados en el uso del software).
 
 Este software ofrece integración con sistemas de _Digital Signage_, permitiendo a los integrantes de la institución visualizar mediante pantallas informativas la información sobre asignación de salas y laboratorios.
+
+#### 25Live
+
+25Live es el producto de _CollegeNET_ que permite la asignación de salas y laboratorios. Su modelo de negocio es un _SAAS_, lo que elimina la necesidad de instalar o mantener el software.
+
+Las características que este software ofrece son:
+
+* Seguimiento de disponibilidad de lugares y recursos.
+* Asignación o petición de espacios para una o múltiples fechas.
+* Especificación de equipo de audio/video, catering y otros recursos necesarios para cada fecha.
+* Manejo granular de permisos de visualización, edición y asignación para grupos específicos.
+* Publicación de eventos a calendarios online de campus mediante _25Live Publisher_.
+* Impresión de reportes de confirmación.
+* Registro de participantes por fecha.
+* Realizar búsquedas personalizadas para eventos, ubicaciones y recursos.
+* Suscripción mediante _feeds RSS_ para alimentar calendarios o correos electrónicos.
+* Manejo de registro en eventos, incluyendo tickets y procesado de pagos.
+
+Hay dos puntos que marcan una diferencia sobre soluciones similares, la primera es la naturaleza _SAAS_, esta característica puede verse como una ventaja o una desventaja, ya que el staff de la institución pierde el control de los datos existentes en el sistema. La segunda característica es la adaptación entre el _SIS_ de la institución y _25Live_; para esto, _CollegeNET_ pone a disposición de sus clientes el _API_ de Web Services de _Series25_, sin embargo esto pertenece a otro producto, lo que influye en el precio total de la solución.
+
+![25Live Screenshot](source/figures/003_screenshot_25live.jpg)
 
 ### Diseño e implementación de un sistema "in-house"
 

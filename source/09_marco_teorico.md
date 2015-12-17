@@ -174,7 +174,66 @@ Un término similar es el de _Servicio_, cuya principal diferencia es la localid
 
 ## API (_Application Programming Interface_)
 
-## HTTP
+## HTTP (_Hyper Text Protocol_)
+
+Es un protocolo situado en la capa de aplicación del modelo _OSI_, diseñado para sistemas de información de hipermedios distribuidos y colaborativos [@Fielding1999].
+Este protocolo es genérico y las peticiones son _stateless_ (cada petición es independiente a las anteriores); puede ser utilizado para propósitos distintos al manejo de hipermedios mediante la extensión de los métodos de petición, códigos de error y _headers_ [@Masinter1998].
+
+La _RFC2616_ especifica que estos son términos escenciales para la descripción del protocolo [@Fielding1999]:
+
+### Cliente
+
+Un programa que establece _conexiones_ con la finalidad de realizar peticiones.
+
+### Conexión
+
+Una capa de transporte virtual establecida entre dos programas cuyo propósito es la comunicación.
+
+
+### Mensaje
+
+Es la unidad básica de la comunicación _HTTP_, consiste en una secuencia estructurada de octetos correspondiente a una sintaxis específica y transmitida mediante una conexión.
+
+
+### URI (_Universal Resource Identifier_)
+
+Un _URI_ corresponde a un _string_ formateado que identifica un recurso mediante nombre, ubicación o cualquier otra característica.
+
+
+### Recurso
+
+Un objeto de datos de red o servicio que puede ser identificado mediante un _URI_.
+Un recurso puede presentar multiples representaciones (distintos lenguajes, formatos de datos, tamaños y resoluciones) o variar en otras formas.
+
+
+### Petición (_Request_)
+
+Un mensaje _HTTP_ de petición, es enviada por el cliente y tiene como objetivo un recurso.
+Una petición se compone del método a ser aplicado sobre el recurso, el identificador del recurso, la versión del protocolo en uso, un conjunto de cabeceras (en las cuales el cliente puede enviar información adicional respecto a la petición), finalmente se encuentra el cuerpo del mensaje.
+
+
+### Respuesta (_Response_)
+
+Corresponde a un mensaje _HTTP_ de respuesta.
+El servidor envia una respuesta luego de procesar la petición del cliente, esta respuesta se compone de la versión del protocolo usada, el código de estado (y su razón), un conjunto de cabeceras agregando información que no puede ser expresada a través del código de estado, finalmente se encuentra el cuerpo del mensaje.
+
+### Entidad (_Entity_)
+
+Corresponde a la información transferida como "carga útil" de una petición o una respuesta.
+Una entidad consiste en meta-información, la que se separa en campos de cabecera (_headers_) y contenido (o cuerpo). <!-- si deseo extenderlo, sección 7 -->
+
+### Representación (_Representation_)
+
+Corresponde a una entidad incluida en una respuesta que esta sujeta a la negociación de contenido.
+Pueden existir multiples representaciones asociadas a un código de respuesta particular.
+
+### Agente de usuario (_User Agent_)
+
+Corresponde al cliente que inicia la petición. Muchas veces corresponden a navegadores, editores, arañas (_spiders_) y otras herramientas de usuario.
+
+### Servidor
+
+Corresponde a un programa que acepta conexiones para servir peticiones mediante el envio de respuestas.
 
 ## Web Service
 
@@ -280,6 +339,7 @@ _Spring_ posee un diseño modular, que permite la adición de componentes tales 
 Esta imagen muestra las capas de componentes del framework:
 
 ![Spring Framework Architecture](source/figures/001_spring_framework_architecture.png)\newline
+
 <!-- TODO: Eliminar el hack feo de la imagen -->
 
 ### Core Container

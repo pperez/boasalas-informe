@@ -189,28 +189,23 @@ Un programa que establece _conexiones_ con la finalidad de realizar peticiones.
 
 Una capa de transporte virtual establecida entre dos programas cuyo propósito es la comunicación.
 
-
 ### Mensaje
 
 Es la unidad básica de la comunicación _HTTP_, consiste en una secuencia estructurada de octetos correspondiente a una sintaxis específica y transmitida mediante una conexión.
 
-
 ### URI (_Universal Resource Identifier_)
 
 Un _URI_ corresponde a un _string_ formateado que identifica un recurso mediante nombre, ubicación o cualquier otra característica.
-
 
 ### Recurso
 
 Un objeto de datos de red o servicio que puede ser identificado mediante un _URI_.
 Un recurso puede presentar multiples representaciones (distintos lenguajes, formatos de datos, tamaños y resoluciones) o variar en otras formas.
 
-
 ### Petición (_Request_)
 
 Un mensaje _HTTP_ de petición, es enviada por el cliente y tiene como objetivo un recurso.
 Una petición se compone del método a ser aplicado sobre el recurso, el identificador del recurso, la versión del protocolo en uso, un conjunto de cabeceras (en las cuales el cliente puede enviar información adicional respecto a la petición), finalmente se encuentra el cuerpo del mensaje.
-
 
 ### Respuesta (_Response_)
 

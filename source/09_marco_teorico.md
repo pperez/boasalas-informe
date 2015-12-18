@@ -411,3 +411,20 @@ Hay que tener en consideración que las historias de usuario deben _representar_
 ## ETL (_Extraction Transformation Load_)
 
 Es un proceso encargado de extraer datos de sistemas posiblemente heterogéneos, realizar transformaciones (ej: conversión y limpieza de datos) para finalmente cargar los datos transformados en el almacen de datos objetivo [@Thomsen2009].
+
+## SAAS (_Software As A Service_)
+
+_SAAS_ es un tipo de computación en la nube, en el que la aplicación es hospedada en un proveedor de servicio y luego es accesada mediante Internet por un cliente [@Velte2009].
+
+Los servicios ofrecidos mediante _SAAS_ pueden ser agrupados en dos categorias:
+
+* **Línea de servicios de negocios**: Corresponden a las soluciones de negocios ofrecidas a compañias y negocios. Son vendidos mediante suscripción y se enfocan al área de procesos de negocio, tales como aplicaciones de manejo de cadena de distribución, manejo de relaciones con clientes (_CRM_), entre otras.
+
+* **Servicios orientados al cliente**: Corresponden a las soluciones ofrecidas al público general en forma de suscripción. Lo más frecuente es que su uso sea gratuito y su financiamiento se logre mediante publicidad. Los ejemplos de esta categoria son los servicios de correo web, juegos en línea, entre otras.
+
+Las ventajas ofrecidas a la organización se generan principalmente por la desligación de esta sobre la mantención del sofware, entre las ventajas encontramos las siguientes:
+
+* Reducción de costos de licencias de software.
+* Eliminación de costos de instalación y mantención de hardware y software.
+* Los proveedores _SAAS_ generalmente son sometidos a auditorias muy meticulosas.
+* Los ciclos de actualización permiten al cliente estar con la versión más actualizada en el menor tiempo posible, permitiendo a la organización invertir en innovación en su industria, en vez de estar manteniendo versiones deprecadas de aplicaciones.

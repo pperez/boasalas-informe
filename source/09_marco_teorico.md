@@ -428,3 +428,30 @@ Las ventajas ofrecidas a la organización se generan principalmente por la desli
 * Eliminación de costos de instalación y mantención de hardware y software.
 * Los proveedores _SAAS_ generalmente son sometidos a auditorias muy meticulosas.
 * Los ciclos de actualización permiten al cliente estar con la versión más actualizada en el menor tiempo posible, permitiendo a la organización invertir en innovación en su industria, en vez de estar manteniendo versiones deprecadas de aplicaciones.
+
+
+## Metodología de desarrollo de Software
+
+Consiste en una estructura para las actividades, acciones y tareas requeridas a fin de conseguir la construcción de software de alta calidad [@Pressman2002]. La metodología adoptada para un proyecto depende de la naturaleza de este, por lo que existen diversos tipos de metodologías con un amplio abanico de enfoques.
+
+### Actividades generales de una metodología de desarrollo de software
+
+5 actividades clave forman la estructura general de una metodología de desarrollo, y la interacción definida entre ellas es la que caracteriza al _tipo_ de metodología.
+
+#### Comunicación
+
+En esta actividad se busca entender los objetivos de los participantes respecto al proyecto, y reunir los requerimientos que ayuden a definir las características y funciones del software.
+
+#### Planeación
+
+En esta actividad se confecciona el _plan del proyecto de software_, en el cual se describen las actividades técnicas a realizar, los riesgos probables, recursos necesarios, los productos del trabajo realizado y la programación de las actividades.
+
+#### Modelado
+
+
+
+#### Construcción
+
+#### Despliegue
+
+![Tipos de metodologías](source/figures/004_tipos_metodologias.png)

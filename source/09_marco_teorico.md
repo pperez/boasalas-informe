@@ -384,6 +384,7 @@ En su forma más básica, un letrero digital se compone de un dispositivo de vis
 
 La idea central de esta técnica de control de acceso, es que los usuarios no tienen acceso a los objetos de negocio; si no que los permisos son asociados a roles, y los usuarios pasan a ser miembros de los roles apropiados o reasignados de roles de ser necesario. De esta forma se simplifica el manejo de la _autorización_ y se provee una forma flexible de especificar y enforzar las políticas de protección de negocio [@Ferraiolo1995]. Otro punto a favor de esta técnica, es el manejo de _permisos_, debido a que es posible asignar nuevos permisos a medida que se implementan nuevas aplicaciones o funcionalidades, o revocar permisos a un rol de ser necesario.
 
+## SIS (_Student Information System_)
 
 ## SEPA (_Sistema Estadístico Profesores y Alumnos_)
 
@@ -453,5 +454,7 @@ En esta actividad se confecciona el _plan del proyecto de software_, en el cual 
 #### Construcción
 
 #### Despliegue
+
+Blabla
 
 ![Tipos de metodologías](source/figures/004_tipos_metodologias.png)

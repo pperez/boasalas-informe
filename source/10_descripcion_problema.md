@@ -1,8 +1,51 @@
 # Descripción del problema
 
-## Problema detectado
+## Problemática actual
 
-<!-- Llename! -->
+La institución carece de un procedimiento de petición/asignación de salas y laboratorios.
+Este procedimiento debiese ser de caracter transversal a los campus existentes, de forma que facilite la gestión, control y seguimiento de los problemas o victorias que emergen del uso de las salas en el transcurso del periodo académico.
+
+El procedimiento actual es similar en los campus, diferenciandose en las unidades encargadas de la asignación de las salas bajo su responsabilidad.
+
+### Procedimiento actual
+
+#### Petición de cursos a departamentos
+
+En este paso se busca asignar docentes a los cursos demandados por la institución, las unidades encargadas de realizar esta petición son las escuelas (O unidades similares, como Plan Común de Ingeniería en el Campus Macul).
+La petición consiste en un documento que especifique las asignaturas y cantidad de cursos requeridos para cada una, el destinatario de la petición es el departamento calificado para dictar tales asignaturas.
+
+#### Asignación de docentes y horarios a cursos
+
+La petición recepcionada en el paso anterior, es analizada por el departamento, tomando en cuenta variables como la cantidad de docentes disponibles, horas destinadas a docencia por docente (Caso de los funcionarios docentes que cuentan con contrato). Este análisis produce la asignación de horarios y docentes a los cursos pedidos por las escuelas.
+
+#### Feedback entre escuelas y departamentos
+
+Las escuelas son las encargadas de minimizar la cantidad de topes de horarios producidos en el paso anterior, teniendo que demandar a los departamentos cambios en los horarios dispuestos.
+La metodología utilizada para esta tarea escapa de los alcances del presente trabajo.
+
+#### Petición de salas y laboratorios
+
+La escuela, al contar con los horarios para cada curso, esta lista para realizar la petición de salas para cada uno.
+Se realizan peticiones a cada unidad encargada de las salas que sean necesarias, en función a los requerimientos propios de cada asignatura (e.g es necesario un proyector, laboratorio de computación, sala con mesas de dibujo, etc).
+
+#### Asignación de salas y laboratorios
+
+En este paso, las unidades receptoras de las peticiones de salas realizan el procesado de estas, teniendo en cuenta las particularidades presentes en los Campus, es así como actualmente en el Campus Macul, las primeras peticiones en ser procesadas son las presentadas por el Plan Común de Ingeniería, seguidas del resto de las unidades de especialidad.
+<!-- con la particularidad de poseer un orden para procesar las peticiones, justificado por la naturaleza de las unidades, es el caso del Campus Macul, donde la unidad primordial es Plan Común de Ingeniería, siendo esta la primera unidad para la que se procesan las peticiones de salas. -->
+
+Este paso tambien puede generar conflictos en los horarios de cursos, teniendo horarios en que no se encuentran salas con las características requeridas por los cursos, produciendose así un feedback con las escuelas, para que hagan los cambios pertinentes en tales horarios.
+
+#### Formalización de cursos
+
+Luego de haber pasado por este flujo de trabajo, los cursos deberían estar libres o poseer muy pocos conflictos de horarios, siendo estos enviados a la _Dirección de Evaluación Académica_ para ser ofertados al estudiantado en el siguiente periodo académico.
+
+### Problemas en el modelo actual
+
+El proceso explicado en el punto anterior no expone las problemáticas generadas en el transcurso del periodo académico, donde la rigidez de la asignación horaria nubla la realidad vivida por estudiantes, docentes y funcionarios.
+
+Nuestra institución requiere que algunos de sus integrantes desempeñen diversas tareas administrativas que afectan la programación académica, generandose así cambios de horarios de caracter informal, cambios que no son registrados en la programación oficial. Al manejarse de esta forma los cambios horarios, se pierde una oportunidad de mejora tanto para las escuelas, docentes y administrativos.
+
+
 
 <!--
 La asignación de recursos debe permitir saltearse los horarios definidos en el sistema académico oficial (Dirdoc), debido a los cambios extraprogramáticos acordados entre los estudiantes y el docente. # Se permiten malas prácticas académicas (En serio??), pero asi es la realidad...

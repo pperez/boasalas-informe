@@ -45,6 +45,7 @@ El proceso explicado en el punto anterior no expone las problemáticas generadas
 
 Nuestra institución requiere que algunos de sus integrantes desempeñen diversas tareas administrativas que afectan la programación académica, generandose así cambios de horarios de caracter informal, cambios que no son registrados en la programación oficial. Al manejarse de esta forma los cambios horarios, se pierde una oportunidad de mejora tanto para las escuelas, docentes y administrativos.
 
+La principal oportunidad de mejora, tanto para el proceso en si, como para la visualización de este, es la implementación de un sistema que modele la realidad, exponiendola a los actores críticos. Este sistema debe permitir que tanto los estudiantes, docentes y diversos funcionarios puedan visualizar la programación académica de la institución, tanto como manejarla.
 
 
 <!--

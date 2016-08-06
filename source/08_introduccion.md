@@ -3,6 +3,8 @@
 ## Descripción del proyecto
 
 Este proyecto presenta el diseño y construcción de un sistema para la comunidad de nuestra casa de estudios, que permita la administración y consulta del uso de salas de clases y laboratorios en los distintos campus y espacios de la universidad.
+Una de las características primordiales de cada módulo de este sistema es permitir la integración de otros sistemas mediante la exposición de un servicio _REST_.
+
 El sistema cuenta con 3 módulos separados por funcionalidad:
 
 ### Módulo de Preinscripción de cursos
@@ -17,19 +19,9 @@ Finalmente, el sistema permite realizar el enlace entre las preinscripciones ing
 Este módulo aborda el proceso de asignación de salas o laboratorios a los cursos inscritos oficialmente.
 Posee integraciones con notificaciones mediante correo electrónico para eventos importantes, como cambios de salas u horarios.
 
+### Módulo de Consulta
 
-
-<!--
-* Backoffice: Módulo que permite a los encargados de los espacios (Salas, laboratorios y otros) realizar asignaciones en función a los periodos y cursos establecidos por la institución.
-
-* Presentación: Módulo que permite consultar las asignaciones de recursos, especificando parámetros de consulta, tales como horarios en un bloque determinado en cada campus, horario de clases de un docente en especial y horarios particulares para el estudiante que realice la consulta.
-Este módulo estará construido de tal forma de ser integrable con la mayor cantidad posible de dispositivos, tomando en cuenta los avances actuales sobre televisores y teléfonos inteligentes (Smart TVs y SmartPhones respectivamente), y básicamente cualquier dispositivo que cuente con acceso a Internet y posea un kit de desarrollo de software.
-
-* Actualizador de datos: Este módulo es el encargado de actualizar la información curricular de la institución (Volcándola en los registros locales del sistema propuesto), permitiendo así a los encargados tener información actualizada desde una fuente de datos oficial de la universidad;  este módulo elimina la necesidad de que las escuelas o departamentos asociados tengan que enviar tal información a los encargados de los recursos.
-
-El diseño arquitectónico de este sistema permitirá la integración con las plataformas desarrolladas por estudiantes y funcionarios de la institución, dando un puntapié inicial a una posible consolidación e interacción de los sistemas de TI que posee actualmente la institución e incluso con aquellos que serán desarrollados a futuro.
-
--->
+Este módulo permite a los usuarios consultar las asignaciones realizadas, permitiendo filtrar por sus intereses, como los cursos que tiene en el periodo académico actual, asignaciones en una sede o en un día en particular.
 
 ## Objetivos
 

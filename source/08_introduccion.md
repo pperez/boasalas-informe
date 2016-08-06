@@ -11,6 +11,14 @@ Este módulo aborda el proceso de ajuste de horarios de cursos entre las escuela
 Este proceso se realiza previamente a la inscripción oficial de cursos en la _DEA_ (Dirección de Evaluación Académica) y consiste en la asignación de salas y laboratorios a los cursos entregados por las escuelas, aquí cabe la posibilidad de que ciertos cursos sufran modificaciones de horarios debido a la disponibilidad de espacios.
 Finalmente, el sistema permite realizar el enlace entre las preinscripciones ingresadas y los cursos oficialmente inscritos, en el caso de que hayan diferencias, son areglables en el módulo de asignación.
 
+
+### Módulo de Asignación
+
+Este módulo aborda el proceso de asignación de salas o laboratorios a los cursos inscritos oficialmente.
+Posee integraciones con notificaciones mediante correo electrónico para eventos importantes, como cambios de salas u horarios.
+
+
+
 <!--
 * Backoffice: Módulo que permite a los encargados de los espacios (Salas, laboratorios y otros) realizar asignaciones en función a los periodos y cursos establecidos por la institución.
 

@@ -2,9 +2,16 @@
 
 ## Descripción del proyecto
 
-Este proyecto presenta el diseño y construcción de un nuevo sistema para los integrantes de nuestra casa de estudios, que permita la asignación y consulta del uso de salas de clases y laboratorios en los distintos campus de la universidad.
-El sistema consta de 3 módulos funcionales:
+Este proyecto presenta el diseño y construcción de un sistema para la comunidad de nuestra casa de estudios, que permita la administración y consulta del uso de salas de clases y laboratorios en los distintos campus y espacios de la universidad.
+El sistema cuenta con 3 módulos separados por funcionalidad:
 
+### Módulo de Preinscripción de cursos
+
+Este módulo aborda el proceso de ajuste de horarios de cursos entre las escuelas y secretarías de estudio (u otras entidades que manejan los horarios de salas y laboratorios).
+Este proceso se realiza previamente a la inscripción oficial de cursos en la _DEA_ (Dirección de Evaluación Académica) y consiste en la asignación de salas y laboratorios a los cursos entregados por las escuelas, aquí cabe la posibilidad de que ciertos cursos sufran modificaciones de horarios debido a la disponibilidad de espacios.
+Finalmente, el sistema permite realizar el enlace entre las preinscripciones ingresadas y los cursos oficialmente inscritos, en el caso de que hayan diferencias, son areglables en el módulo de asignación.
+
+<!--
 * Backoffice: Módulo que permite a los encargados de los espacios (Salas, laboratorios y otros) realizar asignaciones en función a los periodos y cursos establecidos por la institución.
 
 * Presentación: Módulo que permite consultar las asignaciones de recursos, especificando parámetros de consulta, tales como horarios en un bloque determinado en cada campus, horario de clases de un docente en especial y horarios particulares para el estudiante que realice la consulta.
@@ -14,6 +21,7 @@ Este módulo estará construido de tal forma de ser integrable con la mayor cant
 
 El diseño arquitectónico de este sistema permitirá la integración con las plataformas desarrolladas por estudiantes y funcionarios de la institución, dando un puntapié inicial a una posible consolidación e interacción de los sistemas de TI que posee actualmente la institución e incluso con aquellos que serán desarrollados a futuro.
 
+-->
 
 ## Objetivos
 

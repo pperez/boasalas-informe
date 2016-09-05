@@ -2,22 +2,20 @@
 
 ## Descripción del proyecto
 
-Este proyecto presenta el diseño y construcción de un sistema para la comunidad de nuestra casa de estudios, que permita la administración y consulta del uso de salas de clases y laboratorios en los distintos campus y espacios de la universidad.
-Una de las características primordiales de cada módulo de este sistema es permitir la integración de otros sistemas mediante la exposición de un servicio _REST_.
+Uno de los recursos críticos en una institución de educación son las salas de clases y laboratorios;
+actualmente la asignación de estos es un proceso manual y propicio a fallos. Este proyecto apunta a proveer un sistema la administración y consulta del uso de salas y laboratorios, en todos los campus y espacios controlados por la universidad.
 
 El sistema cuenta con 3 módulos separados por funcionalidad:
 
 ### Módulo de Preinscripción de cursos
 
-Este módulo aborda el proceso de ajuste de horarios de cursos entre las escuelas y secretarías de estudio (u otras entidades que manejan los horarios de salas y laboratorios).
-Este proceso se realiza previamente a la inscripción oficial de cursos en la _DEA_ (Dirección de Evaluación Académica) y consiste en la asignación de salas y laboratorios a los cursos entregados por las escuelas, aquí cabe la posibilidad de que ciertos cursos sufran modificaciones de horarios debido a la disponibilidad de espacios.
-Finalmente, el sistema permite realizar el enlace entre las preinscripciones ingresadas y los cursos oficialmente inscritos, en el caso de que hayan diferencias, son areglables en el módulo de asignación.
-
+Este módulo aborda un proceso realizado previamente a la inscripción de cursos en la _DEA_ (Dirección de Evaluación Académica), consistente en la coordinación de cursos y horarios entre escuelas y secretarías de estudio (u otras entidades que manejan salas y laboratorios). Para diferenciarlo del proceso realizado en _DEA_, se le llama proceso de _Preinscripción_.
+Además el sistema permite establecer una relación entre las preinscripciones y los cursos oficialmente inscritos, en el caso de que hayan diferencias, son reparables en el módulo de asignación.
 
 ### Módulo de Asignación
 
 Este módulo aborda el proceso de asignación de salas o laboratorios a los cursos inscritos oficialmente.
-Posee integraciones con notificaciones mediante correo electrónico para eventos importantes, como cambios de salas u horarios.
+Los eventos importantes son enviados como notificaciones mediante correo electrónico, estos eventos pueden ser cambios de salas, horarios u otros.
 
 ### Módulo de Consulta
 
@@ -27,20 +25,22 @@ Este módulo permite a los usuarios consultar las asignaciones realizadas, permi
 
 ### General
 
-Diseñar e implementar un sistema de manejo de salas y laboratorios para un campus universitario que permita integraciones a otros sistemas y herramientas de TI.
+Diseñar e implementar un sistema de administración de horarios de salas y laboratorios para la Universidad Tecnológica Metropolitana.
 
 ### Específicos
 
 * Formalizar y sistematizar el proceso de administración de salas y laboratorios.
-* Construir un sistema que posea puntos de integración con otros sistemas o herramientas.
-* Utilizar las herramientas que demanda el mercado en la construcción de sistemas para una institución que se vincula directamente con él.
+* Construir un sistema que provea integración con otros sistemas o herramientas.
+* Utilizar las herramientas demandadas por el mercado en la construcción de sistemas para una institución que se vincula directamente con él.
+
 
 ## Metodología
 
 El diseño arquitectónico de este proyecto contempla una toma de requerimientos, realizada en forma presencial con los principales involucrados en los procesos actuales de asignación de salas y laboratorios.
-La toma de requerimientos da paso a la confección del diseño arquitectónico del sistema y el plan de actividades de desarrollo, el que será distribuido en hitos semanales y desarrollado por un equipo de trabajo compuesto de una persona.
+La toma de requerimientos da paso a la confección del diseño arquitectónico del sistema y el plan de actividades de desarrollo, el que será distribuido en hitos semanales.
+El desarrollo y codificación del proyecto se realizará bajo la metodología _PSP_ (Personal Software Process).
 El plan de actividades contempla diversas tareas, las que cuentan con una estimación de tiempo inicial, permitiendo saber a priori el costo del proyecto y en cuanto tiempo será completado.
-A su vez el plan de actividades posee revisiones por los Stakeholders (Principales interesados y afectados por el desarrollo de este proyecto).
+A su vez el plan de actividades posee revisiones por los _Stakeholders_ (Principales interesados y afectados por el desarrollo de este proyecto).
 
 
 ## Alcances
@@ -61,12 +61,12 @@ En general, se contempla el uso de los siguientes componentes:
 
 * Motor de base de datos PostgreSQL.
 * Lenguaje de programación Java, utilizando el framework _Spring_ y librerías 3rd party relacionadas.
-* Servidor con Ubuntu 14.04 server de 64 bits, capaz de ejecutar el motor de base de datos referenciado anteriormente y un contenedor a aplicaciones Java web.
+* Servidor con Ubuntu 16.04 server de 64 bits, capaz de ejecutar el motor de base de datos referenciado anteriormente y un contenedor a aplicaciones Java web.
 
 El licenciamiento de los recursos de software utilizados es de carácter libre.
 
 
 ## Resultados esperados
 
-Se espera que la construcción de un proyecto con puntos de integración abiertos permita la interacción entre plataformas utilizadas en la institución, reduciendo drásticamente los tiempos requeridos por procesos realizados de forma manual.
-A su vez el diseño pensado en la integración de otros sistemas permite a los integrantes de la institución el desarrollo de sistemas que exploten los datos existentes en el sistema, pudiendo generar innovación y proyecciones que apoyen la toma de decisiones institucionales.
+Se espera que este proyecto permita tener una visión más completa sobre el uso real de salas y laboratorios, mejorando así la asignación de este recurso y ayudando en la toma de decisiones de la institución.
+Adicionalmente se espera que la entrega de un _API_ abra la puerta a desarrollos de nuevas plataformas para la institución, y que estas puedan interactuar entre si.

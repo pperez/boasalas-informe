@@ -47,6 +47,7 @@ A su vez el plan de actividades posee revisiones por los _Stakeholders_ (Princip
 
 * El proyecto operará de forma online, por lo que se requiere de un dispositivo con acceso a internet y un navegador web.
 * El proyecto utiliza como fuente de datos la planificación académica provista por la Dirección de Docencia de la institución, permitiendo eliminar duplicidad de la información.
+* El proyecto se enfoca en los procedimientos de asignación de salas, saltandose procesos previos como la petición de cursos desde escuelas a departamentos.
 
 
 ## Limitaciones

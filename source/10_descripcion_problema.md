@@ -2,38 +2,40 @@
 
 ## Problemática actual
 
-La institución carece de un procedimiento de petición/asignación de salas y laboratorios.
-Este procedimiento debiese ser de caracter transversal a los campus existentes, de forma que facilite la gestión, control y seguimiento de los problemas o victorias que emergen del uso de las salas en el transcurso del periodo académico.
+La institución carece de procedimientos para petición y asignación de salas o laboratorios.
+Estos procedimientos deberían ser de caracter transversal a los campus existentes, de forma que faciliten la gestión, control y seguimiento de los problemas encontrados en el transcurso del periodo académico.
 
-El procedimiento actual es similar en los campus, diferenciandose en las unidades encargadas de la asignación de las salas bajo su responsabilidad.
+Los procedimientos actuales son similares en cada campus, diferenciandose en las unidades encargadas de la asignación de las salas bajo su responsabilidad.
 
-### Procedimiento actual
+### Procedimientos actuales
 
 #### Petición de cursos a departamentos
 
 En este paso se busca asignar docentes a los cursos demandados por la institución, las unidades encargadas de realizar esta petición son las escuelas (O unidades similares, como Plan Común de Ingeniería en el Campus Macul).
 La petición consiste en un documento que especifique las asignaturas y cantidad de cursos requeridos para cada una, el destinatario de la petición es el departamento calificado para dictar tales asignaturas.
+Este paso escapa a los alcances del proyecto.
 
 #### Asignación de docentes y horarios a cursos
 
 La petición recepcionada en el paso anterior, es analizada por el departamento, tomando en cuenta variables como la cantidad de docentes disponibles, horas destinadas a docencia por docente (Caso de los funcionarios docentes que cuentan con contrato). Este análisis produce la asignación de horarios y docentes a los cursos pedidos por las escuelas.
+Este paso escapa a los alcances del proyecto.
 
 #### Feedback entre escuelas y departamentos
 
 Las escuelas son las encargadas de minimizar la cantidad de topes de horarios producidos en el paso anterior, teniendo que demandar a los departamentos cambios en los horarios dispuestos.
-La metodología utilizada para esta tarea escapa de los alcances del presente trabajo.
+Este paso escapa a los alcances del proyecto.
 
 #### Petición de salas y laboratorios
 
 La escuela, al contar con los horarios para cada curso, esta lista para realizar la petición de salas para cada uno.
 Se realizan peticiones a cada unidad encargada de las salas que sean necesarias, en función a los requerimientos propios de cada asignatura (e.g es necesario un proyector, laboratorio de computación, sala con mesas de dibujo, etc).
+Este proceso es realizado antes de la inscripción oficial de cursos en la _Dirección de Evaluación Académica_.
 
 #### Asignación de salas y laboratorios
 
-En este paso, las unidades receptoras de las peticiones de salas realizan el procesado de estas, teniendo en cuenta las particularidades presentes en los Campus, es así como actualmente en el Campus Macul, las primeras peticiones en ser procesadas son las presentadas por el Plan Común de Ingeniería, seguidas del resto de las unidades de especialidad.
-<!-- con la particularidad de poseer un orden para procesar las peticiones, justificado por la naturaleza de las unidades, es el caso del Campus Macul, donde la unidad primordial es Plan Común de Ingeniería, siendo esta la primera unidad para la que se procesan las peticiones de salas. -->
+En este paso, las unidades receptoras de las peticiones de salas realizan el procesado de estas, teniendo en cuenta las particularidades presentes en los Campus, por ejemplo, en el Campus Macul, las primeras peticiones en ser procesadas son las presentadas por _Plan Común de Ingeniería_, seguidas del resto de las escuelas de cada especialidad.
 
-Este paso tambien puede generar conflictos en los horarios de cursos, teniendo horarios en que no se encuentran salas con las características requeridas por los cursos, produciendose así un feedback con las escuelas, para que hagan los cambios pertinentes en tales horarios.
+Este paso tambien puede generar conflictos en los horarios de cursos, teniendo horarios en que no se encuentran salas con las características requeridas, produciendose así un feedback con las escuelas, para que hagan los cambios pertinentes en tales horarios.
 
 #### Formalización de cursos
 
@@ -41,28 +43,27 @@ Luego de haber pasado por este flujo de trabajo, los cursos deberían estar libr
 
 ### Problemas en el modelo actual
 
-El proceso explicado en el punto anterior no expone las problemáticas generadas en el transcurso del periodo académico, donde la rigidez de la asignación horaria nubla la realidad vivida por estudiantes, docentes y funcionarios.
+Los procesos explicados en el punto anterior no exponen las problemáticas generadas en el transcurso del periodo académico, donde la rigidez de la asignación horaria nubla la realidad vivida por estudiantes, docentes y funcionarios.
 
-Nuestra institución requiere que algunos de sus integrantes desempeñen diversas tareas administrativas que afectan la programación académica, generandose así cambios de horarios de caracter informal, cambios que no son registrados en la programación oficial. Al manejarse de esta forma los cambios horarios, se pierde una oportunidad de mejora tanto para las escuelas, docentes y administrativos.
+Los cambios de horarios son una realidad, debería tenerse la capacidad de informar estos cambios a la comunidad, para eliminar usos innecesarios de salas.
 
-La principal oportunidad de mejora, tanto para el proceso en si, como para la visualización de este, es la implementación de un sistema que modele la realidad, exponiendola a los actores críticos. Este sistema debe permitir que tanto los estudiantes, docentes y diversos funcionarios puedan visualizar la programación académica de la institución, tanto como manejarla.
-
+Debido a los posibles cambios de horarios y cantidad de datos a mostrar, es un problema abordable con un sistema de información.
 
 <!--
-La asignación de recursos debe permitir saltearse los horarios definidos en el sistema académico oficial (Dirdoc), debido a los cambios extraprogramáticos acordados entre los estudiantes y el docente. # Se permiten malas prácticas académicas (En serio??), pero asi es la realidad...
+La asignación de recursos debe permitir saltearse los horarios definidos en el sistema académico oficial (Dirdoc), debido a los cambios extraprogramáticos acordados entre los estudiantes y el docente. # Se permiten malas prácticas académicas (No shit sherlock), pero asi es la realidad...
 -->
 
 ## Alternativas de solución
 
-En este apartado se presentan soluciones al problema descrito.
+En este apartado se presentan soluciones de software para el problema descrito.
 
-### Adquirir una solución envasada
+### Adquirir una solución
 
 Las soluciones presentes en el mercado ofrecen las siguientes características:
 
 * Eliminar el problema de reservar más de una vez una sala en un mismo tramo horario.
 * Controlar los recursos disponibles, poniendo a disposición del staff los patrones de uso de cada recurso, es decir, quien, cuando y dónde estan siendo utilizados.
-* Permitir integración con otros sistemas y _ERP_.
+* Permitir integración con otros sistemas y _ERP_s.
 
 Las soluciones de este tipo evaluadas fueron:
 
@@ -106,17 +107,17 @@ Hay dos puntos que marcan una diferencia sobre soluciones similares, la primera 
 
 ![25Live Screenshot](source/figures/003_screenshot_25live.jpg)
 
-### Diseño e implementación de un sistema "in-house"
+### Diseño e implementación de un sistema a medida
 
 El diseño desde cero de un sistema permite evitar las complicaciones encontradas al adoptar una solución envasada, sobre todo si esta no tiene la flexibilidad suficiente para adaptarse a los variados requerimientos presentados en distintas instituciones.
 
-Un sistema construido desde cero debe proveer funcionalidades acordes al estado de adopción tecnológica de la sociedad, sociedad en que el uso de _smartphones_ asciende cada vez más [@Heggestuen2013]. Las características que incluya este sistema no solo deben ceñirse al tipo de tecnología de moda, más bien debe aprovecharse de estas tecnologías para facilitar la calidad de vida de los usuarios, aterrizando este punto al presente trabajo, es entregar una gran experiencia en _UX_ (User Experience).
+Un sistema construido desde cero debe proveer funcionalidades acordes al estado de adopción tecnológica de la sociedad, sociedad en que el uso de _smartphones_ asciende cada vez más [@Heggestuen2013]. Las características que incluya este sistema no deben ceñirse a las tecnologías de moda, más bien debe aprovecharse de estas para facilitar la calidad de vida de los usuarios, aterrizando este punto al presente trabajo, es entregar una gran experiencia en _UX_ (Experiencia de usuario).
 
-Con estas premisas en mente, las características ofrecidas por el sistema deberian ser:
+Con estas ideas en mente, las características ofrecidas por el sistema deberian ser:
 
-* Integración unidireccional con el _SIS_ de la institución (Dirdoc, para el caso actual).
+* Integración unidireccional con el _SIS_ de la institución (_Dirdoc_, para el caso actual).
 * Exposición de un _API REST_, permitiendo el desarrollo de aplicaciones para distintas marcas y modelos de smartphones u otros dispositivos inteligentes.
-* Plataforma web para administración de reservas de salas.
+* Plataforma web para administración del uso de salas.
 * Manejo de información granular con perfiles de usuarios y reglas de control de acceso (_ACL_).
 * Plataforma web para visualización de reservas y horarios, para académicos, estudiantes y administrativos.
 * Confección de informes de gestión y automatización del envio de estos a los distintos administrativos interesados.

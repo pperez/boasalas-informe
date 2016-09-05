@@ -2,16 +2,13 @@
 
 ## Metodología de Desarrollo
 
+TODO: Mmm, llenar esto?
+
 ## Descripción de módulos
 
 Este apartado detalla las funciones de cada módulo y las tecnologías utilizadas en cada uno de ellos.
 
-### Componentes transversales
-
-Estos componentes son utilizados transversalmente en los módulos del sistema.
-
-* **Spring Framework**: Utilizado para realizar conexiones entre componentes internos, aplicando el patrón de inyección de dependencias.
-* **Apache Lang Commons**: Utilizado para manejo y procesado de _Strings_, eliminando gran parte del código _boilerplate_ en los módulos.
+<!--
 
 ### Módulo modelo
 
@@ -63,7 +60,7 @@ Este módulo es el encargado de servir la aplicación web, construida utilizando
 
 Los componentes tecnológicos a utilizar en este módulo son los siguientes:
 
-* **JSF**: Framework web, orientado a componentes. <!-- TODO: mejorar esto, suena paupérrimo -->
+* **JSF**: Framework web, orientado a componentes. <!-- TODO: mejorar esto, suena paupérrimo
 * **Spring Security**: Este componente es utilizado para manejar el acceso (o denegación de este) a los distintos recursos, implementando complejas lógicas de _ACL_ basadas en los perfiles existentes.
 
 
@@ -73,7 +70,4 @@ Para cumplir con los requerimientos, el modelado de datos fue el siguiente:
 
 ![Modelo Lógico-Relacional](source/figures/002_diagram_salas.png)
 
-
-## Carta Gantt
-
-<!-- Claro que si, campeón -->
+-->

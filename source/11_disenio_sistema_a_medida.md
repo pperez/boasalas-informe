@@ -1,4 +1,4 @@
-# Diseño de un sistema "in-house"
+# Diseño de un sistema a medida
 
 ## Metodología de Desarrollo
 

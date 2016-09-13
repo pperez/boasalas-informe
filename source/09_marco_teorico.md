@@ -6,7 +6,11 @@ La _Real Academia Española_ define campus como el "Conjunto de terrenos y edifi
 
 ## Asignación de salas y laboratorios
 
+TODO: Definir esto en la realidad UTEM.
+
 ## Curso y sección
+
+TODO: Definir esto en la realidad UTEM.
 
 ## Sistema
 
@@ -14,14 +18,10 @@ Un sistema es un conjunto de elementos interdependientes e interactuantes; un gr
 
 Al llevar este término a la informática, se limitan los elementos/componentes a _hardware_, _software_ y _humanos_ (humanware) [@JaramilloBarea2012].
 
-## Plataforma
-
-## Sistema integrable
-
 ## Framework
 
 Un framework es una aplicación reusable y "semi-completa" que puede ser especializada para producir aplicaciones personalizadas [@Fayad1997].
-Un framework permite disminuir los costos y esfuerzos producidos por el continuo redescubrimiento y reinvención de conceptos base y componentes transversales en la industria del software.
+Un framework permite disminuir los costos y esfuerzos producidos por el continuo redescubrimiento y reinvención de conceptos  y componentes transversales en la industria del software.
 Los beneficios principales del uso de frameworks son la modularidad, reusabilidad, extensibilidad e inversión de control que proveen a los desarrolladores.
 
 Por otra parte, un framework es una técnica de reuso orientada a objetos, la cual difiere de la visión  basada en componentes del reuso del software [@Johnson1997].
@@ -55,11 +55,11 @@ Este beneficio incurre en un elevado costo de desarrollo, debido en que las etap
 
 ## Patrones de diseño
 
-Una de las grandes problemáticas que enfrentan los diseñadores en la etapa de diseño de un sistema, son las limitaciones generadas por las decisiones de diseño tomadas en componentes que se desean reutilizar, entre estas decisiones encontramos algoritmos e interfaces propias de componentes u objetos.
+Una de las grandes problemáticas que enfrentan los desarrolladores en la etapa de diseño de un sistema, son las limitaciones generadas por las decisiones de diseño tomadas en componentes que se desean reutilizar, entre estas decisiones encontramos algoritmos e interfaces propias de componentes u objetos.
 
-Esta problemática es compartida por diseñadores, generalmente con distintos contextos y componentes, la que finalmente lleva a la creación de los _patrones de diseño_, siendo estos una solución general a problemas encontrados en la etapa de diseño [@Sommerville2005].
+Esta problemática es compartida por desarrolladores, generalmente en distintos contextos y componentes, la busqueda de soluciones generales a problemas de diseño avanzó hasta la creación de los _patrones de diseño_ [@Sommerville2005].
 
-Un _patrón de diseño_ es la descripción de un problema y la esencia de su solución, de forma que esta pueda ser reutilizada en distintas situaciones [@Sommerville2005].
+Un _patrón de diseño_ es la descripción de un problema y la esencia de su solución, de forma que esta pueda ser reutilizada en distintos contextos [@Sommerville2005].
 Se destaca la naturaleza abstracta del patrón, al no entrar en los detalles de su especificación;, sin embargo un patrón es una expresión de conocimiento y experiencia acumulada.
 
 Hay 3 aspectos principales que todo patrón de diseño debe incluir [@Gamma1994]:
@@ -78,8 +78,6 @@ Es recomendable utilizar el patrón _Factory_ en las siguientes situaciones:
 * Una clase utiliza sus subclases para especificar que objetos crea.
 * Es necesario definir el _dónde_ almacenar la lógica en que se escoge la clase a crear.
 
-### Patrón Builder
-
 ### Patrón Proxy
 
 Este patrón es utilizado cuando se necesita representar un objeto complejo como uno más simple [@Cooper1998]. Otro uso de este patrón es la optimización del uso de recursos, ya que un _Proxy_ puede retrasar la carga de un objeto que incurra en altos tiempos de carga (ej: cargar una imagen, inicializar un array) hasta que este sea realmente necesario. Finalmente, un uso muy común de este patrón es para enforzar los permisos de acceso a objetos, permitiendo un acceso granular a los objetos de negocio [@Cooper1998].
@@ -91,6 +89,8 @@ Este patrón es utilizado cuando se necesita representar un objeto complejo como
 El uso del patrón _Singleton_ es recomendado cuando la lógica de la aplicación requiere que exista solo una instancia de una clase [@Cooper1998]. Esta técnica es muy utilizada en _Spring Framework_ al definir componentes, ya que por defecto son _Singletons_.
 
 ### Patrón Inyección de dependencias
+
+TODO: Añadir definición de esto.
 
 ### Patrón Repository
 
@@ -164,7 +164,13 @@ de interfaces de usuario sin mayores problemas.
 [@Supaartagorn2011] menciona que usualmente los frameworks para construir aplicaciones web implementan el modelo _MVC_.
 -->
 
+### Patrón de Microservicios
+
+La "arquitectura de microservicios" describe una forma de diseñar un sistema separando sus servicios en artefactos independientemente desplegables.
+
 ### Patrón _Service Oriented Architecture_ (_SOA_)
+
+TODO: Llenar esta definición.
 
 ## Componente
 

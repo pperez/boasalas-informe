@@ -4,9 +4,20 @@
 
 TODO: Mmm, llenar esto?
 
-## Descripción de módulos
+## Descripción de servicios
 
-Este apartado detalla las funciones de cada módulo y las tecnologías utilizadas en cada uno de ellos.
+Este apartado detalla las funciones de cada servicio y las tecnologías utilizadas en cada uno de ellos.
+
+### Servicio  de autenticación
+
+Este servicio es el encargado de proveer autenticación, tanto para la interfaz de usuario, como para otros servicios. Para proveer autenticación desde el _SIS_ de la universidad, se utiliza el servicio _REST_ de _SEPA_, además de autenticar con credenciales oficiales de la universidad es posible saber los roles del usuario en esta (Diferenciar si tiene acceso de docente, estudiante o administrativo).
+
+
+#### Tecnologías usadas
+
+### Módulo de preinscripción
+
+Este módulo es el encargado de procesar las inscripciones de cursos en secretarías de estudio.
 
 <!--
 

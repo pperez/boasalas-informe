@@ -2,16 +2,16 @@
 
 ## Problemática actual
 
-La institución carece de procedimientos para petición y asignación de salas o laboratorios.
-Estos procedimientos deberían ser de caracter transversal a los campus existentes, de forma que faciliten la gestión, control y seguimiento de los problemas encontrados en el transcurso del periodo académico.
+La institución carece de procedimientos formales para petición y asignación de salas o laboratorios.
+Estos deberían poseer un caracter transversal a los campus existentes, de forma que faciliten la gestión, control y seguimiento de los problemas encontrados en el transcurso del periodo académico.
 
-Los procedimientos actuales son similares en cada campus, diferenciandose en las unidades encargadas de la asignación de las salas bajo su responsabilidad.
+Los procedimientos actuales son similares en cada campus, diferenciandose principalmente en las unidades encargadas de la asignación de las salas y prioridades a la hora de asignar estos recursos.
 
 ### Procedimientos actuales
 
 #### Petición de cursos a departamentos
 
-En este paso se busca asignar docentes a los cursos demandados por la institución, las unidades encargadas de realizar esta petición son las escuelas (O unidades similares, como Plan Común de Ingeniería en el Campus Macul).
+En este paso se busca asignar docentes a los cursos demandados por la institución, las unidades encargadas de realizar esta petición son las escuelas (O unidades similares, como _Plan Común de Ingeniería_ en el Campus Macul).
 La petición consiste en un documento que especifique las asignaturas y cantidad de cursos requeridos para cada una, el destinatario de la petición es el departamento calificado para dictar tales asignaturas.
 Este paso escapa a los alcances del proyecto.
 
@@ -39,15 +39,15 @@ Este paso tambien puede generar conflictos en los horarios de cursos, teniendo h
 
 #### Formalización de cursos
 
-Luego de haber pasado por este flujo de trabajo, los cursos deberían estar libres o poseer muy pocos conflictos de horarios, siendo estos enviados a la _Dirección de Evaluación Académica_ para ser ofertados al estudiantado en el siguiente periodo académico.
+Luego de haber pasado por este flujo, los cursos deberían estar libres o poseer muy pocos conflictos horarios, siendo estos enviados a la _Dirección de Evaluación Académica_ para ser ofertados al estudiantado en el siguiente periodo académico.
 
 ### Problemas en el modelo actual
 
 Los procesos explicados en el punto anterior no exponen las problemáticas generadas en el transcurso del periodo académico, donde la rigidez de la asignación horaria nubla la realidad vivida por estudiantes, docentes y funcionarios.
 
-Los cambios de horarios son una realidad, debería tenerse la capacidad de informar estos cambios a la comunidad, para eliminar usos innecesarios de salas.
+Los cambios de horarios son una realidad y debería tenerse la capacidad de informar estos cambios a la comunidad, para eliminar usos innecesarios de salas.
 
-Debido a los posibles cambios de horarios y cantidad de datos a mostrar, es un problema abordable con un sistema de información.
+Debido a los posibles cambios de horarios y cantidad de datos a mostrar y reglas de negocio aplicadas, es un problema abordable con un sistema de información.
 
 <!--
 La asignación de recursos debe permitir saltearse los horarios definidos en el sistema académico oficial (Dirdoc), debido a los cambios extraprogramáticos acordados entre los estudiantes y el docente. # Se permiten malas prácticas académicas (No shit sherlock), pero asi es la realidad...

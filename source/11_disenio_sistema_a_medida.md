@@ -4,10 +4,6 @@ Esta alternativa consiste en el desarrollo a medida del sistema para la universi
 
 Para el desarrollo de los servicios que forman el sistema se utilizará el patrón arquitectónico de microservicios, facilitando así la escalabilidad del sistema bajo la demanda.
 
-## Metodología de Desarrollo
-
-TODO: Mmm, llenar esto?
-
 ## Descripción de servicios
 
 Este apartado detalla las funciones de cada servicio y ciertos requerimientos técnicos fundamentales para la implementación.

@@ -56,3 +56,16 @@ Otro punto a favor de esta herramienta es la adición de filtros, así podemos a
 * **Error**: Ejecutados si se producen errores al procesar la petición.
 
 ![Spring Cloud Zuul](source/figures/zuul-api-gateway.jpg)
+
+### Autenticación y autorización con OAUTH 2.0
+
+La aplicación de _OAUTH 2.0_ a un entorno de microservicios influye de esta forma:
+
+* Se agrega un nuevo servicio _Oauth Authorization Server_, este emite tokens que pueden ser usados para autorización en otros servicios.
+* Cada servicio actuará como un _Oauth Resource Server_.
+* Los consumidores externos de servicios actuarán como _Oauth Clients_.
+* El gateway actuará como un _Oauth Token Relay_, funcionando primeramente como un _Oauth Resource Server_ para luego pasar el token de acceso hacia los servicios internos.
+
+_Spring Cloud_ provee soporte de _Oauth 2.0_ en su módulo _Spring Cloud Security_.
+
+![Spring Cloud Security](source/figures/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f313835322f31393936393035372d633864312d653264372d666435362d3832666537383465376133362e706e67.png)

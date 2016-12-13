@@ -19,7 +19,7 @@ TODO: Mmm, llenar esto?
 
 ## Desarrollo de microservicios con Spring Cloud
 
-_Spring Cloud_ es  una colección de herramientas construidas por [Pivotal](https://pivotal.io) diseñadas para solucionar patrones encontrados comúnmente en aplicaciones distribuidas. Entre las problemáticas solucionadas encontramos las siguientes.
+_Spring Cloud_ es  una colección de herramientas construidas por [Pivotal](https://pivotal.io) diseñadas para solucionar patrones comúnmente encontrados en aplicaciones distribuidas. Entre las problemáticas solucionadas encontramos las siguientes.
 
 ### Manejo de configuraciones centralizado
 
@@ -29,6 +29,18 @@ Al crecer la cantidad de servicios (microservicios) desplegados, el manejo de co
 
 ### Servicio de descubrimiento de servicios
 
-Otra problemática presentada al tener una gran cantidad de microservicios en ejecución, es llevar registro de que en que hosts y puertos estos exponen sus servicios, hacer esto manualmente se vuelve inmanejable a medida que escala nuestra plataforma. Esto es abordado con _Spring Cloud Eureka_, consistente en un servicio donde los microservicios puedan autoregistrarse y una libreria cliente para descubrir instancias de microservicios desde el servidor.
+Otra problemática presentada al tener una gran cantidad de microservicios en ejecución, es llevar registro de que en que hosts y puertos estos exponen sus servicios, hacer esto manualmente se vuelve inmanejable a medida que escala nuestra plataforma. Esto es abordado con **Spring Cloud Eureka**, consistente en un servicio donde los microservicios puedan autoregistrarse y una libreria cliente para descubrir instancias de microservicios desde el servidor. Esta funcionalidad tambien permite tener direccionamiento dinámico y balanceo de carga.
 
 ![Spring Cloud Eureka](source/figures/eureka.png)
+
+### Corta-circuitos
+
+Debido a la naturaleza distribuida de este patrón, las llamadas a un servicio pueden gatillar multiples llamadas a otros servicios, haciendo que el sistema sea susceptible a fallas en cascada. Esta problemática es paleada mediante la aplicacion del patrón _Circuit Breaker_, abordado con **Hystrix**.
+
+![Netflix Hystrix](source/figures/circuit_breaker_state_diagram.gif)
+
+### Monitoreo
+
+Vigilar la salud de cada parte del sistema es posible debido al _Circuit Breaker_, a su vez se pueden recolectar estadísticas, estas pueden ser mostradas en paneles de control (Dashboards) y utilizadas para lanzar automáticamente alarmas cuando ciertos umbrales sean sobrepasados. Los datos son recolectados por **Turbine** y servidos por **Hystrix Dashboard**
+
+![Hystrix Dahsboard](source/figures/hystrix-dashboard-fig6-100586598-large.idge.png)

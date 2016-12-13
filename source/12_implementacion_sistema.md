@@ -44,3 +44,15 @@ Debido a la naturaleza distribuida de este patrón, las llamadas a un servicio p
 Vigilar la salud de cada parte del sistema es posible debido al _Circuit Breaker_, a su vez se pueden recolectar estadísticas, estas pueden ser mostradas en paneles de control (Dashboards) y utilizadas para lanzar automáticamente alarmas cuando ciertos umbrales sean sobrepasados. Los datos son recolectados por **Turbine** y servidos por **Hystrix Dashboard**
 
 ![Hystrix Dahsboard](source/figures/hystrix-dashboard-fig6-100586598-large.idge.png)
+
+### API Gateway
+
+En un esquema de microservicios, una vista puede requerir información de multiples servicios, por lo que desde nuestros clientes (e.g Navegadores visualizando una _SPA_ (Single Page Application), teléfonos inteligentes con Android o iOS, etc) debemos tener un punto de entrada a todo nuestro ecosistema. Esta problemática se aborda con un _API Gateway_, siendo esta la puerta de entrada a los servicios de nuestro sistema, en conjunción con el descrubrimiento de servicios lograremos que los clientes accedan a distintos servicios mediante rutas específicas.
+Otro punto a favor de esta herramienta es la adición de filtros, así podemos añadir lógica a las distintas etapas de una petición. _Spring Cloud_ incluye el _API Gateway_ de _Netflix_ llamado **Zuul**, este soporta los siguientes tipos de filtros:
+
+* **Pre**: Ejecutados antes de que la petición sea dirigida.
+* **Routing**: Manipular el direccionamiento de la petición.
+* **Post**: Ejecutados despues de que la petición sea dirigida.
+* **Error**: Ejecutados si se producen errores al procesar la petición.
+
+![Spring Cloud Zuul](source/figures/zuul-api-gateway.jpg)

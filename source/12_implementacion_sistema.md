@@ -66,6 +66,6 @@ La aplicación de _OAUTH 2.0_ a un entorno de microservicios influye de esta for
 * Los consumidores externos de servicios actuarán como _Oauth Clients_.
 * El gateway actuará como un _Oauth Token Relay_, funcionando primeramente como un _Oauth Resource Server_ para luego pasar el token de acceso hacia los servicios internos.
 
-_Spring Cloud_ provee soporte de _Oauth 2.0_ en su módulo _Spring Cloud Security_.
+_Spring Cloud_ provee soporte de _Oauth 2.0_ a través de _Spring Cloud Security_.
 
 ![Spring Cloud Security](source/figures/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f313835322f31393936393035372d633864312d653264372d666435362d3832666537383465376133362e706e67.png)

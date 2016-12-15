@@ -23,7 +23,7 @@ and add the centred logo
 
         \vspace{1.0cm}
 
-        \large{ \textbf{ \uppercase{Sistema de asignacion y control de salas
+        \large{ \textbf{ \uppercase{Diseño y construcción Sistema de asignacion y control de salas
           y laboratorios}}}
 
         \vspace{1.5cm}

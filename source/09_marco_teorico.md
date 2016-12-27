@@ -437,30 +437,34 @@ Las ventajas ofrecidas a la organización se generan principalmente por la desli
 * Los ciclos de actualización permiten al cliente estar con la versión más actualizada en el menor tiempo posible, permitiendo a la organización invertir en innovación en su industria, en vez de estar manteniendo versiones deprecadas de aplicaciones.
 
 
-## Metodología de desarrollo de Software
+## Proceso de desarrollo de Software
 
-Consiste en una estructura para las actividades, acciones y tareas requeridas a fin de conseguir la construcción de software de alta calidad [@Pressman2002]. La metodología adoptada para un proyecto depende de la naturaleza de este, por lo que existen diversos tipos de metodologías con un amplio abanico de enfoques.
+Un proceso es un conjunto de actividades, acciones y tareas que se ejecutan cuando va a crearse
+algún producto del trabajo.
+Una actividad busca lograr un objetivo amplio (por ejemplo, comunicación con los participantes) y se desarrolla sin importar el dominio de la aplicación, tamaño del proyecto, complejidad del esfuerzo o grado de rigor con el que se usará la ingeniería de software. Una acción (diseño de la arquitectura) es un conjunto de tareas que producen un producto importante del trabajo (por ejemplo, un modelo del diseño de la arquitectura). Una tarea se centra en un objetivo pequeño pero bien definido (por ejemplo, realizar una prueba unitaria) que produce un resultado tangible [@Pressman2002].
+El proceso de software no es una receta rígida que asegure el éxito de un trabajo, más bien es un enfoque adaptable que permite a los usuarios confeccionar su propio conjunto de acciones y tareas y organización de estás para el trabajo. El objetivo de este proceso es la entrega oportuna y con la calidad requerida para satisfacer a los interesados en el proyecto y los usuarios finales.
+Finalmente, existen 5 etapas transversales a todo proyecto de software, es decir, son aplicables en todo proyecto, independiente de su tamaño o complejidad.
 
-### Actividades generales de una metodología de desarrollo de software
-
-5 actividades clave forman la estructura general de una metodología de desarrollo, y la interacción definida entre ellas es la que caracteriza al _tipo_ de metodología.
+### Actividades estructurales de un proceso de desarrollo de Software
 
 #### Comunicación
 
-En esta actividad se busca entender los objetivos de los participantes respecto al proyecto, y reunir los requerimientos que ayuden a definir las características y funciones del software.
+La comunicación con el cliente es una parte crítica en el desarrollo y debe preceder a cualquier trabajo técnico. Aquí se busca entender los objetivos de cada participante respecto al proyecto y reunir los requerimientos que definan las características y funciones del software.
 
 #### Planeación
 
-En esta actividad se confecciona el _plan del proyecto de software_, en el cual se describen las actividades técnicas a realizar, los riesgos probables, recursos necesarios, los productos del trabajo realizado y la programación de las actividades.
+Esta etapa genera el plan de desarrollo de software, el cual contiene las tareas técnicas a realizar, los riesgos probables, recursos requeridos, productos de trabajo obtenidos y una programación de actividades.
 
 #### Modelado
 
-
+El modelado es una actividad utilizada en distintas disciplinas que permite tener un panorama general de la situación que se quiere representar. Esto no es distinto en el desarrollo de software y ayuda a entender mejor los requerimientos y el diseño que los satisfagan.
 
 #### Construcción
 
+Esta etapa combina la generación de código y las pruebas requeridas para descubrir errores en este.
+
 #### Despliegue
 
-Blabla
+Se hace la entrega del software al consumidor, quien debe evaluar y generar feedback.
 
-![Tipos de metodologías](source/figures/004_tipos_metodologias.png)
+<!-- ![Tipos de metodologías](source/figures/004_tipos_metodologias.png) -->

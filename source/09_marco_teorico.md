@@ -467,4 +467,31 @@ Esta etapa combina la generación de código y las pruebas requeridas para descu
 
 Se hace la entrega del software al consumidor, quien debe evaluar y generar feedback.
 
-<!-- ![Tipos de metodologías](source/figures/004_tipos_metodologias.png) -->
+
+### Flujos del proceso de software
+
+La organización de las actividades estructurales vistas en el punto anterior forman distintos tipos de flujos de software, entre los que encontramos el flujo lineal, iterativo, evolutivo y en paralelo.
+
+#### Flujo lineal
+
+Un flujo de proceso lineal ejecuta cada una de las cinco actividades estructurales en secuencia, comenzando por la comunicación y terminando con el despliegue.
+
+![Flujo Lineal](source/figures/flujo_lineal.png)
+
+#### Flujo iterativo
+
+Un flujo de proceso iterativo repite una o más de las actividades antes de pasar a la siguiente.  
+
+![Flujo Iterativo](source/figures/flujo_iterativo.png)
+
+#### Flujo evolutivo
+
+Un flujo de proceso evolutivo realiza las actividades en forma "circular". A través de las cinco actividades, cada circuito lleva a una versión más completa del software.
+
+![Flujo Evolutivo](source/figures/flujo_evolutivo.png)
+
+#### Flujo paralelo
+
+Un flujo de proceso paralelo ejecuta una o más actividades en paralelo con otras (por ejemplo, el modelado de un aspecto del software tal vez se ejecute en paralelo con la construcción de otro aspecto del software).
+
+![Flujo Paralelo](source/figures/flujo_paralelo.png)

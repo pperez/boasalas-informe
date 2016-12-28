@@ -480,7 +480,7 @@ Un flujo de proceso lineal ejecuta cada una de las cinco actividades estructural
 
 #### Flujo iterativo
 
-Un flujo de proceso iterativo repite una o más de las actividades antes de pasar a la siguiente.  
+Un flujo de proceso iterativo repite una o más de las actividades antes de pasar a la siguiente.
 
 ![Flujo Iterativo](source/figures/flujo_iterativo.png)
 

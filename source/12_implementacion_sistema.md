@@ -1,4 +1,4 @@
-# Implementación del sistema a medida
+  # Implementación del sistema a medida
 
 Según las descripciones presentadas en el capítulo anterior, se presenta una posible implementación utilizando el patrón de microservicios y herramientas de código abierto.
 El stack tecnológico utilizado se compone principalmente de lo siguiente:
@@ -11,11 +11,12 @@ El stack tecnológico utilizado se compone principalmente de lo siguiente:
 
 ## Modelos de datos de servicios
 
-TODO: Hacer diagrama de datos.
+TODO: Hacer diagrama de microservicios.
 
 ## Metodología de Desarrollo
 
-TODO: Mmm, llenar esto?
+Para este proyecto se escogió un flujo de proceso _incremental_, entendiendo como requerimientos fundamentales el modelado de los procesos institucionales expuestos en el punto 3.1.1.
+Las iteraciones realizadas en el proyecto son acotadas en el tiempo, de forma de apresurar una liberación pronta del producto; cada iteración consta generalmente de 2 semanas para ser desarrollada.
 
 ## Desarrollo de microservicios con Spring Cloud
 

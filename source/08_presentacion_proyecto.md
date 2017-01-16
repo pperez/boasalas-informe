@@ -2,24 +2,11 @@
 
 ## Descripción del proyecto
 
-Uno de los recursos críticos en una institución de educación son las salas de clases y laboratorios;
-actualmente la asignación de estos es un proceso manual y propicio a fallos. Este proyecto apunta a proveer un sistema la administración y consulta del uso de salas y laboratorios, en todos los campus y espacios controlados por la universidad.
+Este proyecto aborda el diseño e implementación de una plataforma en línea que permita la asignación de salas y laboratorios en un campus universitario, puntualmente en la Universidad Tecnológica Metropolitana.
 
-El sistema cuenta con 3 módulos separados por funcionalidad:
+La plataforma tiene contemplados los procesos internos de esta institución, entre ellos la preinscripción de cursos (Procedimiento previo a la inscripción formal de cursos que vela por evitar inconsistencias al asignar salas y laboratorios) y asignación final de salas a cursos.
 
-### Módulo de Preinscripción de cursos
-
-Este módulo aborda un proceso realizado previamente a la inscripción de cursos en la _DEA_ (Dirección de Evaluación Académica), consistente en la coordinación de cursos y horarios entre escuelas y secretarías de estudio (u otras entidades que manejan salas y laboratorios). Para diferenciarlo del proceso realizado en _DEA_, se le llama proceso de _Preinscripción_.
-Además el sistema permite establecer una relación entre las preinscripciones y los cursos oficialmente inscritos, en el caso de que hayan diferencias, son reparables en el módulo de asignación.
-
-### Módulo de Asignación
-
-Este módulo aborda el proceso de asignación de salas o laboratorios a los cursos inscritos oficialmente.
-Los eventos importantes son enviados como notificaciones mediante correo electrónico, estos eventos pueden ser cambios de salas, horarios u otros.
-
-### Módulo de Consulta
-
-Este módulo permite a los usuarios consultar las asignaciones realizadas, permitiendo filtrar por sus intereses, como los cursos que tiene en el periodo académico actual, asignaciones en una sede o en un día en particular.
+El acceso visible a esta plataforma permite visualización de las asignaciones en cada campus, salas y laboratorios en un horario seleccionado.
 
 ## Objetivos
 
@@ -29,45 +16,42 @@ Diseñar e implementar un sistema de administración de horarios de salas y labo
 
 ### Específicos
 
-* Formalizar y sistematizar el proceso de administración de salas y laboratorios.
-* Construir un sistema que provea integración con otros sistemas o herramientas.
-* Utilizar las herramientas demandadas por el mercado en la construcción de sistemas para una institución que se vincula directamente con él.
-
+* Formalizar y sistematizar los procesos de asignación de salas y laboratorios.
+* Construir una plataforma extensible y de carácter abierto que permita la integración de aplicaciones móviles u otros sistemas de gestión.
+* Construir la plataforma utilizando tecnologías enterprise de carácter abierto.
 
 ## Metodología
 
-El diseño arquitectónico de este proyecto contempla una toma de requerimientos, realizada en forma presencial con los principales involucrados en los procesos actuales de asignación de salas y laboratorios.
-La toma de requerimientos da paso a la confección del diseño arquitectónico del sistema y el plan de actividades de desarrollo, el que será distribuido en hitos semanales.
-El desarrollo y codificación del proyecto se realizará bajo la metodología _PSP_ (Personal Software Process).
-El plan de actividades contempla diversas tareas, las que cuentan con una estimación de tiempo inicial, permitiendo saber a priori el costo del proyecto y en cuanto tiempo será completado.
-A su vez el plan de actividades posee revisiones por los _Stakeholders_ (Principales interesados y afectados por el desarrollo de este proyecto).
+El abordaje de este proyecto consiste inicialmente en recopilar los requerimientos de más alto nivel con los sujetos que manipularán y consumirán datos de la plataforma, esta recopilación se realiza de forma presencial y se enfoca en la formalización de los procesos que actualmente se llevan en la institución.
+La fase de toma de requerimientos da paso a la confección de un modelo, validado en conjunto con los interesados por la plataforma.
+Con un modelo formado es posible formalizar los requerimientos, de esta forma se pueden planificar las iteraciones semanales, las que al concluir entregarán funcionalidades a los usuarios
+Al concluir la codificación de los requerimientos se revisa la plataforma con los interesados en el proyecto, agregando los errores como tareas para la próxima iteración; esto se repite hasta que los interesados del proyecto estén conformes con el funcionamiento de la plataforma.
 
 
 ## Alcances
 
-* El proyecto operará de forma online, por lo que se requiere de un dispositivo con acceso a internet y un navegador web.
-* El proyecto utiliza como fuente de datos la planificación académica provista por la Dirección de Docencia de la institución, permitiendo eliminar duplicidad de la información.
-* El proyecto se enfoca en los procedimientos de asignación de salas, saltandose procesos previos como la petición de cursos desde escuelas a departamentos.
+* La plataforma operará en línea, requiriendo un dispositivo con acceso a internet y un navegador web.
+* La plataforma se alimentará de los datos estadísticos existentes en _SEPA_, estos son una réplica de los datos manejados por _Dirección de Docencia_.
+* La plataforma se aboca a los procesos de asignación y uso de salas, por lo que los procesos académicos fuera de este contexto no son manejados (e.g petición de cursos a departamentos).
 
 
 ## Limitaciones
 
-* El sistema recopila información académica, sin embargo no replica las funcionalidades existentes en otras plataformas institucionales (Dígase Dirdoc, Reko, Mi UTEM y otros).
-* Si bien el sistema es accesible desde dispositivos móviles como smartphones o tablets, no se asegura una experiencia de usuario rica como en plataformas desktop.
+* Esta plataforma utiliza la planificación académica, en algunos casos se pueden encontrar datos existentes en otras plataformas institucionales, sin embargo el enfoque no es replicar funcionalidades existentes en estas, si no que convivir con ellas de una forma consistente.
+* La plataforma es accesible desde dispositivos móviles, sin embargo no se entregarán aplicaciones nativas para estos, por lo que la experiencia de usuario puede no ser igual que la entregada en equipos de escritorio.
 
 
 ## Recursos
 
-En general, se contempla el uso de los siguientes componentes:
+Se prefieren tecnologías y herramientas de carácter libre, entre ellas destacamos:
 
-* Motor de base de datos PostgreSQL.
-* Lenguaje de programación Java, utilizando el framework _Spring_ y librerías 3rd party relacionadas.
-* Servidor con Ubuntu 16.04 server de 64 bits, capaz de ejecutar el motor de base de datos referenciado anteriormente y un contenedor a aplicaciones Java web.
-
-El licenciamiento de los recursos de software utilizados es de carácter libre.
+* Base de datos PostgreSQL.
+* Lenguaje de programación Java, utilizando el framework _Spring_.
+* Servidor físico con _Ubuntu_ 16.04 server de 64 bits.
+* Servidor de contenedor web _Tomcat_.
 
 
 ## Resultados esperados
 
-Se espera que este proyecto permita tener una visión más completa sobre el uso real de salas y laboratorios, mejorando así la asignación de este recurso y ayudando en la toma de decisiones de la institución.
-Adicionalmente se espera que la entrega de un _API_ abra la puerta a desarrollos de nuevas plataformas para la institución, y que estas puedan interactuar entre si.
+Se espera que la sistematización de la asignación de salas permita que este recurso de explote a plenitud al evitar errores de asignaciones y notificando a tiempo cambios en su uso.
+Adicionalmente se espera que la entrega de una integración abierta abra la puerta a desarrollos de nuevas plataformas para la institución, plataformas que puedan interactuar entre si.

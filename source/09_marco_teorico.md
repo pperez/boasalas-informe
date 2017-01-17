@@ -1,14 +1,16 @@
 # Marco teórico
 
-## Campus
+## Realidad UTEM
+
+### Campus
 
 La _Real Academia Española_ define campus como el "Conjunto de terrenos y edificios pertenecientes a una universidad" [@Espanol2015].
 
-## Asignación de salas y laboratorios
+### Asignación de salas y laboratorios
 
 TODO: Definir esto en la realidad UTEM.
 
-## Curso y sección
+### Curso y sección
 
 TODO: Definir esto en la realidad UTEM.
 
@@ -18,7 +20,11 @@ Un sistema es un conjunto de elementos interdependientes e interactuantes; un gr
 
 Al llevar este término a la informática, se limitan los elementos/componentes a _hardware_, _software_ y _humanos_ (humanware) [@JaramilloBarea2012].
 
-## Framework
+## Conceptos utilizados en la confección de sistemas
+
+TODO: Agregar una descripción sobre esto, y como se relacionan entre si para construir sistemas.
+
+### Framework
 
 Un framework es una aplicación reusable y "semi-completa" que puede ser especializada para producir aplicaciones personalizadas [@Fayad1997].
 Un framework permite disminuir los costos y esfuerzos producidos por el continuo redescubrimiento y reinvención de conceptos  y componentes transversales en la industria del software.
@@ -34,17 +40,17 @@ Existen 3 tipos de frameworks [@Fayad1997]:
 Su concepción responde a la necesidad de incrementar la capacidad de los desarrolladores de modularizar, reusar, y extender sus infraestructuras para trabajar sin problemas de forma distribuida.
 * **Frameworks de aplicaciones empresariales**: Este tipo de framework tiene un amplio rango de aplicaciones y cuenta con alto retorno de inversión (ROI) debido a que con ellos es posible desarrollar aplicaciones de alta calidad rápidamente; sin embargo, el costo de desarrollar este tipo de frameworks es alto, por lo que generalmente se opta por adquirir sistemas envasados y realizar integraciones con frameworks de middleware.
 
-### Clases  de frameworks
+#### Clases  de frameworks
 
 Hay dos clases de frameworks, estas se diferencian por la forma en que sus componentes son reutilizados y extendidos (Para añadir funcionalidad no ofrecida) [@Fayad1997].
 
-#### Frameworks White-box
+##### Frameworks White-box
 
 Su reuso y extensión es realizado mediante herencia y sobrecarga de métodos _hooks_ predefinidos (Utilizando patrones como _Template Method_ [@Gamma1994] o similares).
 
 Debido a su forma de reuso y extensión (Herencia) es necesario que el desarrollador tenga un íntimo conocimiento de cada pieza interna de estos, produciendo que el software desarrollado tenga un gran acoplamiento a la estructura jerárquica de herencia del framework.
 
-#### Frameworks Black-box
+##### Frameworks Black-box
 
 La extensión en esta clase de frameworks es realizada definiendo interfaces compatibles con el framework e inyectándolas a este mediante composición.
 
@@ -53,7 +59,7 @@ Por otra parte, el reuso de funcionalidades es realizado mediante la definición
 Su estructura basada en composición y delegación permite que sea más sencillo su uso y extensión (En comparación a los frameworks White-box).
 Este beneficio incurre en un elevado costo de desarrollo, debido en que las etapas de diseño deben definirse interfaces y hooks que anticipen un amplio espectro de casos de uso [@Hermann1995].
 
-## Patrones de diseño
+### Patrones de diseño
 
 Una de las grandes problemáticas que enfrentan los desarrolladores en la etapa de diseño de un sistema, son las limitaciones generadas por las decisiones de diseño tomadas en componentes que se desean reutilizar, entre estas decisiones encontramos algoritmos e interfaces propias de componentes u objetos.
 
@@ -68,7 +74,7 @@ Hay 3 aspectos principales que todo patrón de diseño debe incluir [@Gamma1994]
 * El _problema de diseño_ que será abordado por la estructura abstracta, de esta forma se determina en que escenarios es aplicable el patrón.
 * Las _consecuencias_ (positivas y negativas) introducidas al aplicar la estructura abstracta a la arquitectura del sistema. Este punto ayuda a determinar si el patrón debe aplicarse o no.
 
-### Patrón Factory
+#### Patrón Factory
 
 Este patrón se encarga de escoger y retornar una clase desde un conjunto de clases en función a un dato provisto. Comúnmente, el conjunto de clases comparte un _ancestro_ en común (Por lo que la interfaz de uso es igual para todas), pero cada una de ellas realiza distinta lógica [@Cooper1998].
 
@@ -78,23 +84,23 @@ Es recomendable utilizar el patrón _Factory_ en las siguientes situaciones:
 * Una clase utiliza sus subclases para especificar que objetos crea.
 * Es necesario definir el _dónde_ almacenar la lógica en que se escoge la clase a crear.
 
-### Patrón Proxy
+#### Patrón Proxy
 
 Este patrón es utilizado cuando se necesita representar un objeto complejo como uno más simple [@Cooper1998]. Otro uso de este patrón es la optimización del uso de recursos, ya que un _Proxy_ puede retrasar la carga de un objeto que incurra en altos tiempos de carga (ej: cargar una imagen, inicializar un array) hasta que este sea realmente necesario. Finalmente, un uso muy común de este patrón es para enforzar los permisos de acceso a objetos, permitiendo un acceso granular a los objetos de negocio [@Cooper1998].
 
 <!-- TODO: Añadir una imagen explicativa del patrón proxy, me tinca algo con seguridad como los filtros de laravel -->
 
-### Patrón Singleton
+#### Patrón Singleton
 
 El uso del patrón _Singleton_ es recomendado cuando la lógica de la aplicación requiere que exista solo una instancia de una clase [@Cooper1998]. Esta técnica es muy utilizada en _Spring Framework_ al definir componentes, ya que por defecto son _Singletons_.
 
-### Patrón Inyección de dependencias
+#### Patrón Inyección de dependencias
 
 TODO: Añadir definición de esto.
 
-### Patrón Repository
+#### Patrón Repository
 
-El patrón Repository nace de los problemas generados al acceder a los datos presentes en una aplicación, estos datos pueden existir en diversos almacenamientos, ya sean bases de datos, web services, ficheros de texto u otros; el acceso directo a datos puede generar los siguientes problemas:
+El patrón _Repository_ nace de los problemas generados al acceder a los datos presentes en una aplicación, estos datos pueden existir en diversos almacenamientos, ya sean bases de datos, web services, ficheros de texto u otros; el acceso directo a datos puede generar los siguientes problemas:
 
 * Código duplicado.
 * Aumentar la probabilidad de errores de programación.
@@ -104,7 +110,7 @@ El patrón Repository nace de los problemas generados al acceder a los datos pre
 
 Estas problemáticas son agrupadas bajo la necesidad de unificar el punto de acceso a datos en la aplicación. Es así que este patrón ofrece una interfaz centralizada para el acceso a datos, reutilizable en alguna capa de la aplicación [@Evans2004].
 
-## Patrones Arquitectónicos
+### Patrones Arquitectónicos
 
 Un _patrón arquitectónico_ es la expresión de una estructura fundamental para sistemas de software [@Buschmann1996].
 
@@ -113,9 +119,9 @@ Una de las características más importantes de los patrones arquitectónicos es
 
 El patrón provee un conjunto definido de subsistemas, especificando sus responsabilidades e incluye las reglas y guías para organizar las relaciones entre ellos.
 
-Un patrón arquitectónico es una forma de comunicar experiencias de diseño de arquitecturas de software, produciendo así softwares de mejor calidad; en otras palabras un patrón arquitectónico promueve la reutilización de diseños [@Bass2012].
+Un patrón arquitectónico es una forma de comunicar experiencias de diseño de arquitecturas de software, produciendo así software de mejor calidad; en otras palabras un patrón arquitectónico promueve la reutilización de diseños [@Bass2012].
 
-### Atributos de calidad
+#### Atributos de calidad
 
 Un atributo de calidad es una característica no funcional de un componente o sistema [@Dobrica2002] y expresa el cómo una aplicación debe lograr una necesidad dada [@Gorton2006].
 El estándar ISO-9126-1 define seis categorías para los atributos de calidad:
@@ -133,7 +139,7 @@ Las subcaracterísticas presentes son _madurez_, _tolerancia a fallos_, _recuper
 * **Usabilidad**: Define la cantidad de esfuerzo necesario para usar el software.
 Posee 5 subcaracterísticas: _comprensibilidad_, _facilidad de aprendizaje_, _operabilidad_, _atractivo_ y cumplimiento de usabilidad.
 
-### Patrón MVC
+#### Patrón MVC
 
 La literatura categoriza de distintas formas a este patrón, como un paradigma [@Burbeck1992] y como un patrón arquitectónico como tal[@Gos2004]; en este trabbajo será tratado como un _patrón_, debido a que aborda un problema de diseño arquitectónico.
 
@@ -164,13 +170,9 @@ de interfaces de usuario sin mayores problemas.
 [@Supaartagorn2011] menciona que usualmente los frameworks para construir aplicaciones web implementan el modelo _MVC_.
 -->
 
-### Patrón de Microservicios
+#### Patrón de Microservicios
 
 La "arquitectura de microservicios" describe una forma de diseñar un sistema separando sus servicios en artefactos independientemente desplegables.
-
-### Patrón _Service Oriented Architecture_ (_SOA_)
-
-TODO: Llenar esta definición.
 
 ## Componente
 

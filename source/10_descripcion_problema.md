@@ -3,24 +3,21 @@
 ## Problemática actual
 
 La institución carece de procedimientos formales para petición y asignación de salas o laboratorios.
-Estos deberían poseer un caracter transversal a los campus existentes, de forma que faciliten la gestión, control y seguimiento de los problemas encontrados en el transcurso del periodo académico.
+Estos deberían poseer un carácter transversal a los campus existentes, de forma que faciliten la gestión, control y seguimiento de los problemas encontrados en el transcurso del periodo académico.
 
-Los procedimientos actuales son similares en cada campus, diferenciandose principalmente en las unidades encargadas de la asignación de las salas y prioridades a la hora de asignar estos recursos.
+Los procedimientos son similares en cada campus y se diferencian principalmente en las unidades encargadas de la asignación de salas y las prioridades a la hora de asignarlas.
 
 ### Procedimientos actuales
 
-#### Petición de cursos a departamentos
+#### Petición de asignación de docentes a cursos
 
-En este paso se busca asignar docentes a los cursos demandados por la institución, las unidades encargadas de realizar esta petición son las escuelas (O unidades similares, como _Plan Común de Ingeniería_ en el Campus Macul).
-La petición consiste en un documento que especifique las asignaturas y cantidad de cursos requeridos para cada una, el destinatario de la petición es el departamento calificado para dictar tales asignaturas.
-Este paso escapa a los alcances del proyecto.
+Al acercarse el inicio del próximo semestre lectivo las escuelas (O unidades similares como _Plan Común de Ingeniería_ en el Campus Macul) realizan una estimación de demanda de cursos de parte de los estudiantes, esta estimación es enviada a los departamentos académicos calificados para suplirla y su fin es que los departamentos asignen docentes a estos cursos.
 
 #### Asignación de docentes y horarios a cursos
 
-La petición recepcionada en el paso anterior, es analizada por el departamento, tomando en cuenta variables como la cantidad de docentes disponibles, horas destinadas a docencia por docente (Caso de los funcionarios docentes que cuentan con contrato). Este análisis produce la asignación de horarios y docentes a los cursos pedidos por las escuelas.
-Este paso escapa a los alcances del proyecto.
+La petición recepcionada en el paso anterior, es analizada por el departamento, el que según sus criterios asigna docentes a cada curso solicitado.
 
-#### Feedback entre escuelas y departamentos
+#### Retroalimentación entre escuelas y departamentos
 
 Las escuelas son las encargadas de minimizar la cantidad de topes de horarios producidos en el paso anterior, teniendo que demandar a los departamentos cambios en los horarios dispuestos.
 Este paso escapa a los alcances del proyecto.
